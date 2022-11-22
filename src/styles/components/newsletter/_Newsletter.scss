@@ -1,0 +1,123 @@
+$font: "Poppins", sans-serif;
+$fontColor: #ffffff;
+$background: #ad7fde;
+
+* {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+.container-news {
+  background-color: #983ff6;
+  padding-bottom: 50px;
+  
+}
+
+//Participa en torneos.../img
+
+.img-part {
+  width: 100%;
+  position: relative;
+  
+}
+
+.text-participa {
+  position: absolute;
+  top: 30%;
+  left: 11.9%;
+  // transform: translate(-50%, -50%);
+  width: 67.375rem;
+  font-weight: 600;
+  // font-size: 4rem;
+  font-size: 4rem;
+  line-height: 5.12rem;
+  color: $fontColor;
+  text-align: center;
+}
+
+//Juega en cualquier parte del mundo
+
+.div-parte {
+  color: $fontColor;
+  margin-left: 6.438rem ;
+  // text-align: justify;
+  
+  
+}
+
+.title-parte {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.75rem;
+  margin-top: 2.813rem;
+  margin-bottom: 2.188rem;
+  
+}
+
+.text-parte {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+//Suscripcion
+
+.suscription {
+  position: absoluta;
+  margin: 3.893rem 6.438rem 0 6.438rem;
+  background-color: #fbbc05;
+  border-radius: 1.048rem;
+  padding: 1.875rem;
+  display: flex;
+}
+
+.title-suscription {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 3.375rem;
+  
+}
+
+.text-suscription {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.563rem;
+  width: 82%;
+ 
+ 
+}
+
+.input-mail {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+input {
+  width: 26.933rem;
+  height: 3.352rem;
+  padding-left: 0.938rem;
+  border-radius: 0.559rem;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.btn-suscription {
+  position: absolute;
+  border-radius: 0.559rem;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  margin: auto 0.938rem;
+  width: 7.332rem;
+  height: 2.584rem;
+  cursor: pointer;
+  color: white;
+  background-color: #fbbc05;
+}

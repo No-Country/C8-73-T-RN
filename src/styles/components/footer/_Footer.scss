@@ -1,0 +1,100 @@
+$font: "Poppins", sans-serif;
+$fontColor: #ffffff;
+$background: #ad7fde;
+
+.footer-section {
+    display: flex;
+    position: absolute;
+    // margin-top: 3.125rem;
+  }
+  
+  .container {
+    background-color: $background;
+    color: $fontColor;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 0.7fr) 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.563rem;
+    grid-row-gap: 0px;
+    justify-content: center;
+    //   align-items: center;
+    text-align: center;
+    padding: 3.125rem 1.25rem;
+    position: relativa;
+    
+  }
+  
+  .footer-logo {
+    margin-bottom: 1.25rem;
+    font-size: 1.575rem;
+    font-weight: 800;
+    line-height: 2.418rem;
+  }
+  
+  .footer-info {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.575rem;
+  }
+  
+  .footer-widget-heading {
+    font-size: 1.116rem;
+    font-weight: 700;
+    line-height: 1.673rem;
+  }
+  
+  .footer-sections {
+    margin-bottom: 1.25rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .item {
+    text-decoration: none;
+    color: $fontColor;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.956rem;
+  }
+  
+  .phone {
+    margin-top: 1.25rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.575rem;
+  }
+
+  .icons{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-icons {
+    margin-top: 1.25rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 2.231rem;
+    height: 2.231rem;
+    padding: 0.313rem;
+    margin: 0 0.313rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+  }
+  
+  .copyrigth {
+    background-color: $background;
+    border-top: 1px solid $fontColor;
+    padding: 1.563rem;
+    justify-content: center;
+    text-align: center;
+    color: $fontColor;
+    font-size: 0.853rem;
+    font-weight: 400;
+    line-height: 1.626rem;
+  }
+  
