@@ -5,19 +5,19 @@ $background: #ad7fde;
 .footer-section {
     display: flex;
     position: absolute;
-    // margin-top: 3.125rem;
+    margin-top: 3.125rem;
+    
   }
   
   .container {
     background-color: $background;
     color: $fontColor;
     display: grid;
-    grid-template-columns: 1fr repeat(2, 0.7fr) 1fr;
+    grid-template-columns: 1fr repeat(2, 0.7fr) 1fr ;
     grid-template-rows: 1fr;
-    grid-column-gap: 1.563rem;
+    grid-column-gap: 4rem;
     grid-row-gap: 0px;
     justify-content: center;
-    //   align-items: center;
     text-align: center;
     padding: 3.125rem 1.25rem;
     position: relativa;
@@ -41,6 +41,7 @@ $background: #ad7fde;
     font-size: 1.116rem;
     font-weight: 700;
     line-height: 1.673rem;
+    white-space: nowrap;
   }
   
   .footer-sections {
@@ -57,6 +58,7 @@ $background: #ad7fde;
     font-size: 1.05rem;
     font-weight: 400;
     line-height: 1.956rem;
+    white-space: nowrap;
   }
   
   .phone {
@@ -79,7 +81,7 @@ $background: #ad7fde;
     width: 2.231rem;
     height: 2.231rem;
     padding: 0.313rem;
-    margin: 0 0.313rem;
+    margin: 0 0.313rem 0.313rem 0;
     align-items: center;
     justify-content: center;
     text-align: center;

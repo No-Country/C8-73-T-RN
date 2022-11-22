@@ -5,13 +5,13 @@ const Newsletter = () => {
    
     <div className="container-news">
       <div className="img-participa">
-        <img
+        {/* <img
           src="https://res.cloudinary.com/carina-bosio/image/upload/v1669043572/NoCountry/Rectangle_4_iuqnxj.png"
           alt=""
           className="img-part"
-        />
+        /> */}
         <div className="text-participa">
-          Participa en torneos y compite <br />
+          Participa en torneos y compite 
           con los mejores jugadores del mundo.
         </div>
       </div>

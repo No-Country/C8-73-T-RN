@@ -13,39 +13,53 @@ $background: #ad7fde;
 .container-news {
   background-color: #983ff6;
   padding-bottom: 50px;
-  
 }
 
 //Participa en torneos.../img
 
-.img-part {
+.img-participa {
   width: 100%;
-  position: relative;
-  
+  height: 50.618em; /*o rem*/
+  background-image: url("https://res.cloudinary.com/carina-bosio/image/upload/v1669043572/NoCountry/Rectangle_4_iuqnxj.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 100%; /* Resize the background image to cover the entire container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // z-index: 3;
 }
+
+// .img-part {
+//   width: 100%;
+//   position: relative;
+
+// }
 
 .text-participa {
   position: absolute;
-  top: 30%;
-  left: 11.9%;
-  // transform: translate(-50%, -50%);
-  width: 67.375rem;
+  width: 70%;
   font-weight: 600;
   // font-size: 4rem;
-  font-size: 4rem;
+  // font-size: 4rem;
+  font-size: calc(1.9em + 1.9vw);
   line-height: 5.12rem;
   color: $fontColor;
   text-align: center;
+  justify-content: center;
+  hyphens: none;
 }
 
 //Juega en cualquier parte del mundo
 
 .div-parte {
   color: $fontColor;
-  margin-left: 6.438rem ;
+  margin-left: 6.438rem;
+  margin-right: 6.438rem;
+
   // text-align: justify;
-  
-  
 }
 
 .title-parte {
@@ -54,13 +68,13 @@ $background: #ad7fde;
   line-height: 3.75rem;
   margin-top: 2.813rem;
   margin-bottom: 2.188rem;
-  
 }
 
 .text-parte {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.7rem;
+  hyphens: none;
 }
 
 //Suscripcion
@@ -72,13 +86,18 @@ $background: #ad7fde;
   border-radius: 1.048rem;
   padding: 1.875rem;
   display: flex;
+
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .title-suscription {
-  font-size: 2.25rem;
+  // font-size: 2.25rem;
+  font-size: calc(1.06em + 1.06vw);
   font-weight: 500;
   line-height: 3.375rem;
-  
 }
 
 .text-suscription {
@@ -86,8 +105,6 @@ $background: #ad7fde;
   font-weight: 400;
   line-height: 1.563rem;
   width: 82%;
- 
- 
 }
 
 .input-mail {
@@ -97,6 +114,10 @@ $background: #ad7fde;
   align-items: center;
   margin: auto;
   position: relative;
+
+  @media only screen and (max-width: 900px) {
+    margin-top:0.5rem;
+  }
 }
 
 input {
