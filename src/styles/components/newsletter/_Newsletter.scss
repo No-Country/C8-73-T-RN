@@ -38,17 +38,25 @@ $background: #ad7fde;
 
 // }
 
-.text-participa {
-  position: absolute;
-  width: 70%;
-  font-weight: 600;
-  // font-size: 4rem;
-  // font-size: 4rem;
-  font-size: calc(1.9em + 1.9vw);
-  line-height: 5.12rem;
-  color: $fontColor;
+.div-text{
+  display:flex;
+  width: 95%;
   text-align: center;
   justify-content: center;
+}
+
+.text-participa {
+  // position: absolute;
+  width: 100%;
+  // padding: 5rem;
+  font-weight: 600;
+  // font-size: 4rem;
+  font-size: clamp(2.5rem, 6.2vw, 8rem); 
+  // font-size: calc(275% + 1.9vw);
+  // line-height: 5.12rem;
+  line-height: clamp(5rem, 10vw, 10rem); 
+  color: $fontColor;
+  
   hyphens: none;
 }
 
@@ -87,7 +95,7 @@ $background: #ad7fde;
   padding: 1.875rem;
   display: flex;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
   }
@@ -105,6 +113,7 @@ $background: #ad7fde;
   font-weight: 400;
   line-height: 1.563rem;
   width: 82%;
+  hyphens: none;
 }
 
 .input-mail {
@@ -115,7 +124,7 @@ $background: #ad7fde;
   margin: auto;
   position: relative;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     margin-top:0.5rem;
   }
 }

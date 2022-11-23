@@ -6,6 +6,8 @@ $background: #ad7fde;
     display: flex;
     position: absolute;
     margin-top: 3.125rem;
+
+   
     
   }
   
@@ -21,7 +23,16 @@ $background: #ad7fde;
     text-align: center;
     padding: 3.125rem 1.25rem;
     position: relativa;
-    
+   
+    @media only screen and (max-width: 796px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr repeat(2, 0.5fr) 0.6fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0.5rem;
+    justify-content: left;
+    text-align: left;
+    }
   }
   
   .footer-logo {

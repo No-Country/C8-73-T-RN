@@ -2,17 +2,15 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-   
     <div className="container-news">
       <div className="img-participa">
-        {/* <img
-          src="https://res.cloudinary.com/carina-bosio/image/upload/v1669043572/NoCountry/Rectangle_4_iuqnxj.png"
-          alt=""
-          className="img-part"
-        /> */}
-        <div className="text-participa">
-          Participa en torneos y compite 
-          con los mejores jugadores del mundo.
+      
+        <div className="div-text">
+          <div className="text-participa">
+            <p>Participa en torneos y compite</p> 
+            <p>con los mejores jugadores del</p> 
+            <p>mundo</p>
+            </div>
         </div>
       </div>
 
@@ -30,7 +28,9 @@ const Newsletter = () => {
 
       <div className="suscription">
         <div>
-          <p className="title-suscription">Para que estés siempre actualizado</p>
+          <p className="title-suscription">
+            Para que estés siempre actualizado
+          </p>
           <p className="text-suscription">
             Subscribite a nuestra newsletter para todas las actualizaciones y
             noticias de nuestros torneos
@@ -50,7 +50,6 @@ const Newsletter = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
