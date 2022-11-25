@@ -1,14 +1,13 @@
 // FUENTE IMPORTADA
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 // RAIZ
 :root {
     // COLORES
     --text-primary: #181818;
-    --background-primary: #e6e6e6;
+    --background-primary: #993ff6;
     --background-secondary: #d9d9d9;
     // TIPOGRAFIA
-    --family-primary: "Montserrat", sans-serif;
+    --family-primary: "Poppins", sans-serif;
     --family-secondary: Helvetica, Arial, sans-serif;
 }
 
@@ -30,7 +29,6 @@
     font-family: var(--family-primary);
     color: var(--text-primary);
     background-color: var(--background-primary);
-    hyphens: auto;
 
     &::-webkit-scrollbar {
         width: 7px;
