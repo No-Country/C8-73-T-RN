@@ -26,6 +26,18 @@
     color: $color;
   }
   
+  .title {
+    width: 167px;
+    color: rgba(255,255,255,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-weight: ExtraBold;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+  }
   
   
   nav {
@@ -38,18 +50,25 @@
   .navigation {
     list-style: none;
     float: right;
-    margin: 20px;
+    // margin: 5px;
+    margin-top: -50px;
     
     li {
       display: inline-block;
       margin: 30px;
       color:white;
       
-    a:link {
-       @include style-link-text($color-text-dark);
-      }
     }
+    :hover{
+        text-decoration: underline 4px;
+        color: $color-secondary;
+    }   
+    
   }
+ 
+  
+
+ 
   
   .buttons {
     float: right;
@@ -71,7 +90,7 @@
   .btn-main {
     
     color:white;
-    
+
     &:link {
       @extend %btn-placeholder;
       background-color: $color-secondary;
@@ -93,3 +112,22 @@
       background-color: darken($color-tertiary, 15%);
     }
   }
+
+
+  .search {
+    width: 50%;
+    position: relative;
+    display: flex;
+    }
+
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #ffff;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: $color-text-light;
+  }
+  
