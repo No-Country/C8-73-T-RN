@@ -26,7 +26,7 @@ Se uso `ReactJs` para la interfaz, `Sass` para los estilos, `Firebase Auth` para
 
 Para iniciar el proyecto, escriba los siguientes comandos en su editor de código.
 
-### `git clone https://github.com/davidmedev222/ecommerce-jordan-react.git`
+### `git clone https://github.com/No-Country/C8-73-T-RN.git`
 
 Este comando clonará el proyecto en su ordenador.
 
