@@ -29,6 +29,7 @@
     font-family: var(--family-primary);
     color: var(--text-primary);
     background-color: var(--background-primary);
+    padding: clamp(1rem, 1vw, 2rem);
 
     &::-webkit-scrollbar {
         width: 7px;
