@@ -2,9 +2,13 @@
 @use "./global/mixins";
 @use "./global/reset";
 
-//* COMPONENTS
+//* COMPONENTES
 @use "./components/button/Button";
 @use "./components/navbar/Navbar";
 @use "./components/login/Login";
 @use "./components/footer/Footer";
 @use "./components/hero/Hero";
+
+
+//* PAGINAS
+@use "./pages/error/Error";

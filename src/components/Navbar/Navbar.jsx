@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/components/navbar/_Navbar.scss'
+
 const Navbar = () => {
     return (
         <nav>
@@ -21,4 +21,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export {Navbar}
