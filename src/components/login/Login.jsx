@@ -1,12 +1,19 @@
+import { LoginContext } from "../../context/login/LoginContext"; // CONTEXTO
+import { useContext } from "react"; // HOOK
+
 const Login = () => {
+    const { updateOnLogin } = useContext(LoginContext); // AYUDANTES
+
+    const handleOnLogin = (ev) => {
+        if (ev.target === ev.currentTarget) return updateOnLogin(false);
+    }; // EVENTO
+
     return (
-        <div className="login-background">
+        <div onClick={handleOnLogin} className="login-background">
             <section className="login">
-                {/* BUTTON DE VOLVER */}
-                {/* <button className="login-btn-close">X</button> */}
                 {/* INFORMACION */}
-                <h1 className="login-h1">e/stadium</h1>
-                <h2 className="login-h2">Bienvenido a e/stadium</h2>
+                <h2 className="login-h2">e/stadium</h2>
+                <h3 className="login-h3">Bienvenido a e/stadium</h3>
                 <span className="login-span">Elige como deseas continuar configurando su cuenta</span>
                 {/* BOTONES DE INICIO */}
                 <button className="login-btn login-btn-apple">Continua con Apple</button>

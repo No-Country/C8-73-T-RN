@@ -45,6 +45,7 @@ Abra http://localhost:3000 en su navegador para ver la aplicación.
 # **Últimas actualizaciones**
 
 -   interfaz inicio de sesión con opción.
+-   funcion mostrar inicio de sesión con opción.
 -   interfaz barra de navegación.
 -   interfaz portada protagonista.
 -   interfaz categorias.
