@@ -45,18 +45,18 @@ Abra http://localhost:3000 en su navegador para ver la aplicación.
 # **Últimas actualizaciones**
 
 -   interfaz inicio de sesión con opción.
--   funcion mostrar inicio de sesión con opción.
 -   interfaz barra de navegación.
 -   interfaz portada protagonista.
 -   interfaz categorias.
 -   interfaz boletín de noticias.
 -   interfaz pié de página.
+-   funcion mostrar inicio de sesión con opción.
+-   interfaz de página error 404.
 
 # **Futuras actualizaciones**
 
 -   interfaz inicio de sesión.
 -   interfaz registro de sesión.
 -   interfaz registro de sesión exitoso.
--   interfaz de página error 404.
 -   carrusel de juegos.
 -   cursor dinámico.

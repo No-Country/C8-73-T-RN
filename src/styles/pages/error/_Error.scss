@@ -1,6 +1,14 @@
+// MIXINS
+@import "../.././global/mixins";
+
+// ESTILOS
 .error {
-    // &-picture {
-    // }
+    @include flex(column, center, center);
+    gap: 2rem;
+
+    &-picture {
+        max-width: 35rem;
+    }
     &-title {
         font-size: 3.5rem;
         font-weight: 700;
