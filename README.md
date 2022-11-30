@@ -52,11 +52,11 @@ Abra http://localhost:3000 en su navegador para ver la aplicación.
 -   interfaz pié de página.
 -   funcion mostrar inicio de sesión con opción.
 -   interfaz de página error 404.
+-   interfaz inicio de sesión.
+-   interfaz registro de sesión.
 
 # **Futuras actualizaciones**
 
--   interfaz inicio de sesión.
--   interfaz registro de sesión.
 -   interfaz registro de sesión exitoso.
 -   carrusel de juegos.
 -   cursor dinámico.
