@@ -10,4 +10,7 @@
 @use "./components/hero/Hero";
 
 //* PAGINAS
+//? ERROR
 @use "./pages/error/Error";
+//? LOGIN
+@use "./pages/login/LoginLayout";
