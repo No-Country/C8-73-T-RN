@@ -1,8 +1,8 @@
 const Juegos = () => {
     return (
-        <>
-            <main>contenido</main>
-        </>
+        <main>
+            <h2>contenido de juegos</h2>
+        </main>
     );
 };
 

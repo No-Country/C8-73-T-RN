@@ -1,8 +1,8 @@
 const Torneos = () => {
     return (
-        <>
-            <main>contenido</main>
-        </>
+        <main>
+            <h2>contenido de torneos</h2>
+        </main>
     );
 };
 
