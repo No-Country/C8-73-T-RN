@@ -1,11 +1,11 @@
 import { LoginContext } from "../../context/login/LoginContext"; // CONTEXTO
 import { useContext } from "react"; // HOOK
 
-const Login = () => {
-    const { updateOnLogin } = useContext(LoginContext); // AYUDANTES
+const LoginWithOption = () => {
+    const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
 
     const handleOnLogin = (ev) => {
-        if (ev.target === ev.currentTarget) return updateOnLogin(false);
+        if (ev.target === ev.currentTarget) return updateOnLoginWithOption(false);
     }; // EVENTO
 
     return (
@@ -38,4 +38,4 @@ const Login = () => {
     );
 };
 
-export { Login };
+export { LoginWithOption };

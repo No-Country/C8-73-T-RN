@@ -2,9 +2,9 @@ import { LoginContext } from "./LoginContext"; // CONTEXTO
 import { useState } from "react"; // HOOK
 
 const LoginContextProvider = ({ children }) => {
-    const [onLogin, updateOnLogin] = useState(false); // ESTADO
+    const [onLoginWithOption, updateOnLoginWithOption] = useState(false); // ESTADO
 
-    const values = { onLogin, updateOnLogin }; // VALORES DEL CONTEXTO
+    const values = { onLoginWithOption, updateOnLoginWithOption }; // VALORES DEL CONTEXTO
 
     return <LoginContext.Provider value={values}> {children}</LoginContext.Provider>;
 };

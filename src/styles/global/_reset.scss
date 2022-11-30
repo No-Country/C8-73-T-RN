@@ -44,6 +44,11 @@ body {
     font-family: var(--family-one);
     color: var(--text-one);
     background-color: var(--background-one);
+}
+
+header,
+main,
+footer {
     padding: 0 clamp(2rem, 5.75vw, 10rem);
 }
 
