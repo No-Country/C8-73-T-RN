@@ -134,9 +134,17 @@ input {
   height: 3.352rem;
   padding-left: 0.938rem;
   border-radius: 0.559rem;
-  outline: none;
+  // outline: none;
   background-color: #ffffff;
 }
+
+
+
+input::placeholder{
+  color: #CCCCCC;
+}
+
+
 
 .btn-suscription {
   position: absolute;
@@ -150,4 +158,43 @@ input {
   cursor: pointer;
   color: white;
   background-color: #fbbc05;
+}
+
+:disabled{
+  cursor: not-allowed;
+}
+
+// .error-mail{
+//   margin-top: 10px;
+//   display:flex;
+//   justify-content: center;
+// }
+
+.suscription-mail{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+.errors{
+display:flex;
+position: absolute;
+justify-content: center;
+align-items: center;
+margin-top: 5rem;
+color: red;
+z-index: 5;
+}
+
+.swal2-styled.swal2-confirm.swalBtnColor {
+  color: #FFC900;
+  background-color: #983ff6
+}
+
+.swal2-styled.swal2-swalIconColor {
+  color: #FFC900;
 }
