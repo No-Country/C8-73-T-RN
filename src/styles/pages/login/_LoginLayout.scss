@@ -1,15 +1,14 @@
 // MIXINS
-@import "../.././global/mixins";
+@import '../.././global/mixins';
 
 // ESTILOS
-.login-layout-bg {
+.layout-login-bg {
     @include flex(row, center, center);
     background-color: lightblue;
+    padding: clamp(1rem, 2.5vw, 5rem) 0;
 }
-.login-layout {
-    // max-width: 40vw;
-    display: flex;
-    flex-direction: column;
+.layout-login {
+    @include flex(column, center, flex-start);
     gap: 1rem;
     border-radius: 1rem;
     background-color: var(--background-two);
@@ -21,9 +20,23 @@
     }
     &-ul {
         @include flex(row, center, center);
-        gap: 2rem;
+        gap: 2.5rem;
     }
     &-a {
-        font-size: 2vw;
+        font-size: 1.25vw;
+
+        &-border {
+            height: 0.25rem;
+            border-radius: 1rem;
+            background-color: #fbbc05;
+            margin-top: 0.25rem;
+            opacity: 0;
+            transition: 500ms;
+        }
+        &-active {
+            .layout-login-a-border {
+                opacity: 1;
+            }
+        }
     }
 }
