@@ -22,9 +22,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: baseline;
-}
 
-body {
     &::-webkit-scrollbar {
         width: 0.5rem;
         background-color: var(--background-one);
