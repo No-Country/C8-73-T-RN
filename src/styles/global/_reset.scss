@@ -1,15 +1,17 @@
 // FUENTE IMPORTADA
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 // RAIZ
 :root {
     // COLORES
-    --text-primary: #181818;
-    --background-primary: #e6e6e6;
-    --background-secondary: #d9d9d9;
+    --text-one: #ffffff;
+    --text-two: #000000;
+    // FONDOS
+    --background-one: #993ff6;
+    --background-two: #0c074a;
+    --background-three: #ad7fde;
     // TIPOGRAFIA
-    --family-primary: "Montserrat", sans-serif;
-    --family-secondary: Helvetica, Arial, sans-serif;
+    --family-one: "Poppins", sans-serif;
 }
 
 // GENERAL
@@ -20,24 +22,32 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: baseline;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+        background-color: var(--background-one);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--text-one);
+        border-radius: 3rem;
+    }
 }
 
 #root {
+    position: relative;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-size: 100%;
-    font-family: var(--family-primary);
-    color: var(--text-primary);
-    background-color: var(--background-primary);
-    hyphens: auto;
+    font-family: var(--family-one);
+    color: var(--text-one);
+    background-color: var(--background-one);
+}
 
-    &::-webkit-scrollbar {
-        width: 7px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: var(--text-primary);
-    }
+header,
+main,
+footer {
+    padding: 0 clamp(2rem, 5.75vw, 10rem);
 }
 
 img,
@@ -78,7 +88,6 @@ h6,
 p,
 span,
 a,
-strong,
 blockquote,
 i,
 b,
@@ -94,13 +103,13 @@ em {
 
 // SELECCION DE TEXTO Y COLOR
 ::-moz-selection {
-    background-color: var(--text-primary);
-    color: var(--background-primary);
+    background-color: var(--text-one);
+    color: var(--background-three);
 }
 
 ::selection {
-    background-color: var(--text-primary);
-    color: var(--background-primary);
+    background-color: var(--text-one);
+    color: var(--background-three);
 }
 
 form,
@@ -114,7 +123,6 @@ label {
     color: inherit;
     font-family: inherit;
     font-size: inherit;
-    hyphens: auto;
     appearance: none;
     -webkit-appearance: none;
 }

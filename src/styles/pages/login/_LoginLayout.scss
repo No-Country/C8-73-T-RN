@@ -1,0 +1,42 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// ESTILOS
+.layout-login-bg {
+    @include flex(row, center, center);
+    background-color: lightblue;
+    padding: clamp(1rem, 2.5vw, 5rem) 0;
+}
+.layout-login {
+    @include flex(column, center, flex-start);
+    gap: 1rem;
+    border-radius: 1rem;
+    background-color: var(--background-two);
+    padding: 2rem clamp(1rem, 3.5vw, 7rem);
+
+    &-h2 {
+        font-size: 2.25vw;
+        font-weight: 700;
+    }
+    &-ul {
+        @include flex(row, center, center);
+        gap: 2.5rem;
+    }
+    &-a {
+        font-size: 1.25vw;
+
+        &-border {
+            height: 0.25rem;
+            border-radius: 1rem;
+            background-color: #fbbc05;
+            margin-top: 0.25rem;
+            opacity: 0;
+            transition: 500ms;
+        }
+        &-active {
+            .layout-login-a-border {
+                opacity: 1;
+            }
+        }
+    }
+}

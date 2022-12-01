@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer classNameName="footer-section">
+    
+      <footer className="footer-section">
         <div className="footer-div">
           <div className="container">
             <section className="section-one">
@@ -87,8 +87,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
+  
   );
 };
 
-export default Footer;
+export {Footer};

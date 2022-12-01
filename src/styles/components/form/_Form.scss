@@ -1,0 +1,87 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// MAPAS DE VARIABLES
+$form-label: (
+    'font-size': clamp(1rem, 1vw, 2rem),
+    'font-weight': 400,
+);
+$form-input: (
+    'placeholder': (
+        'color': #afafaf,
+        'font-size': clamp(0.75rem, 0.75vw, 1.5rem),
+        'font-weight': 400,
+    ),
+    'background-color': #ffffff,
+    'padding': clamp(1rem, 1vw, 2rem),
+);
+
+// ESTILOS
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &-label {
+        font-size: map-get($map: $form-label, $key: 'font-size');
+        font-weight: map-get($map: $form-label, $key: 'font-weight');
+    }
+    &-input {
+        color: map-get($form-input, 'placeholder', 'color');
+        font-size: map-get($form-input, 'placeholder', 'font-size');
+        font-weight: map-get($form-input, 'placeholder', 'font-weight');
+        border-radius: 0.5rem;
+        background-color: map-get($map: $form-input, $key: 'background-color');
+        padding: map-get($form-input, 'padding');
+        outline: none;
+
+        &::placeholder {
+            color: inherit;
+            font-weight: inherit;
+        }
+    }
+    &-h3 {
+        align-self: flex-end;
+        color: #ffb82e;
+        font-size: clamp(1rem, 1vw, 2rem);
+        font-weight: 400;
+        margin: 0 0 3rem 0;
+    }
+    &-terms {
+        &-label {
+            font-size: clamp(0.75rem, 0.75vw, 1.5rem);
+            margin: 1rem 0;
+        }
+        &-checkbox {
+            display: inline;
+            border-radius: 0.5rem;
+            background-color: white;
+            padding: 0.2rem 0.4rem;
+            margin-right: 0.75rem;
+
+            &::after {
+                content: '✔';
+                color: black;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &-group {
+        @include flex(row, center, center);
+        gap: 1.5rem;
+
+        &-btn {
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 3rem;
+            background-color: #fbbc05;
+            padding: 0.75rem 2.5rem;
+
+            &-cancel {
+                color: #000000;
+                font-weight: 400;
+                background-color: #ffffff;
+            }
+        }
+    }
+}

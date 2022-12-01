@@ -135,4 +135,4 @@ const Newsletter = () => {
   );
 };
 
-export default Newsletter;
+export {Newsletter};

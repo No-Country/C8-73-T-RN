@@ -1,11 +1,19 @@
 //* GLOBAL
-@use "./global/mixins";
-@use "./global/reset";
+@use './global/mixins';
+@use './global/reset';
 
-//* COMPONENTS
-@use "./components/button/Button";
-@use "./components/navbar/Navbar";
-@use "./components/login/Login";
-@use "./components/footer/Footer";
-@use "./components/hero/Hero";
-@use "./components/newsletter/Newsletter";
+//* COMPONENTES
+@use './components/button/Button';
+@use './components/navbar/Navbar';
+@use './components/login/LoginWithOption';
+@use './components/form/Form';
+@use './components/footer/Footer';
+@use './components/hero/Hero';
+@use './components/newsletter/Newsletter';
+
+
+//* PAGINAS
+//? ERROR
+@use './pages/error/Error';
+//? LOGIN
+@use './pages/login/LoginLayout';
