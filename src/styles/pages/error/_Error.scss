@@ -2,6 +2,9 @@
 @import '../.././global/mixins';
 
 // ESTILOS
+.error-main {
+    padding: var(--padding-main);
+}
 .error {
     @include flex(column, center, center);
     gap: 2rem;
