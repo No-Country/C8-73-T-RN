@@ -1,9 +1,9 @@
-import {Newsletter} from "../../components/newsletter/Newsletter";
+import { Newsletter } from '../../components/newsletter/Newsletter'; // COMPONENTE
 
 const Inicio = () => {
     return (
         <main>
-           <Newsletter/>
+            <Newsletter />
         </main>
     );
 };
