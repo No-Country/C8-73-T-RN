@@ -58,17 +58,26 @@
       color:white;
       
     }
-    :hover{
-        text-decoration: underline 4px;
-        color: $color-secondary;
-    }   
+    // :hover{
+    //     text-decoration: underline 4px;
+    //     color: $color-secondary;
+    // }   
     
   }
- 
-  
 
+  li::after{
+    display:block;
+    content:"";
+    width:0;
+    height: 2px;
+    background-color: $color-secondary;
+    transition: width 0.3ms
+
+  }
+  li:hover::after{
+    width:100%;
+  }
  
-  
   .buttons {
     float: right;
     margin: 30px;
