@@ -101,12 +101,13 @@ $background: #ad7fde;
   .copyrigth {
     background-color: $background;
     border-top: 1px solid $fontColor;
-    padding: 1.563rem;
+    padding: 1.563rem 0;
     justify-content: center;
     text-align: center;
     color: $fontColor;
     font-size: 0.853rem;
     font-weight: 400;
     line-height: 1.626rem;
+    width: 100%;
   }
   

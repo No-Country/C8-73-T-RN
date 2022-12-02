@@ -1,0 +1,13 @@
+@import "../.././global/mixins";
+
+.tournament-background{
+  @include flex(row, center, center);
+  position: fixed;
+  width: 69.563rem;
+  height: 37.75rem;
+  background-color: #0c074a;
+  border-radius: 16px;
+  margin-left: 20.80%;
+  margin-top: 12%;
+
+}

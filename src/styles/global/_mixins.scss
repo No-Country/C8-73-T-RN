@@ -31,3 +31,12 @@
         @content;
     }
 }
+
+@mixin grid-crear-torneo($direction, $justify, $align, $text){
+    display: flex;
+    flex-direction: $direction;
+    justify-items: $justify;
+    align-items: $align;
+    text-align: $text;
+    
+}
