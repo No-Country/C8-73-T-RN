@@ -1,6 +1,6 @@
 const Error = () => {
     return (
-        <main>
+        <main className="error-main">
             {/* CONTENIDO */}
             <section className="error">
                 {/* IMAGEN */}

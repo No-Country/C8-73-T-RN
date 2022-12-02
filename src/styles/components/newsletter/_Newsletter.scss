@@ -136,6 +136,7 @@ input {
   border-radius: 0.559rem;
   // outline: none;
   background-color: #ffffff;
+  color: black;
 }
 
 
@@ -161,7 +162,8 @@ input::placeholder{
 }
 
 :disabled{
-  cursor: not-allowed;
+  // cursor: not-allowed;
+  background-color: #898989;
 }
 
 // .error-mail{
@@ -178,6 +180,7 @@ input::placeholder{
   align-items: center;
   margin: auto;
   position: relative;
+  
 }
 
 .errors{

@@ -1,5 +1,5 @@
 // FUENTE IMPORTADA
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // RAIZ
 :root {
@@ -11,7 +11,9 @@
     --background-two: #0c074a;
     --background-three: #ad7fde;
     // TIPOGRAFIA
-    --family-one: "Poppins", sans-serif;
+    --family-one: 'Poppins', sans-serif;
+    // PADDING
+    --padding-main: 0 clamp(2rem, 5.75vw, 10rem);
 }
 
 // GENERAL
@@ -45,7 +47,6 @@
 }
 
 header,
-main,
 footer {
     padding: 0 clamp(2rem, 5.75vw, 10rem);
 }
@@ -97,7 +98,7 @@ em {
     font-weight: inherit;
     font-style: inherit;
     text-decoration: none;
-    // text-align: center;
+    text-align: center;
     color: inherit;
 }
 

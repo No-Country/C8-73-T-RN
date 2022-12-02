@@ -17,7 +17,7 @@ const Layout = () => {
             {/* COMPONENTE LOGIN WITH OPTION */}
             {onLoginWithOption && <LoginWithOption />}
             {onCreateTourney && <CreateTourney />}
-            <CreateTourney/>
+            {/* <CreateTourney/> */}
             {/* <CreateATournament/> */}
             {/* COMPONENTE NAVBAR */}
             <header>
