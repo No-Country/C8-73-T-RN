@@ -8,10 +8,15 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="title">
-                <span>e/ stadium</span>
-            </div>
+            
+                <span className="title">e/ stadium</span>
+            
+            
+            
+            <input type="text" className="search" />
+            
             <ul className="navigation">
+             
                 <li>
                     <a href="#">Home</a>
                 </li>
