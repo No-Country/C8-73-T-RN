@@ -1,4 +1,5 @@
 import '../styles/App.scss'; // ESTILOS DE LA APP
+import { UserContextProvider } from '../context/user/UserContextProvider'; // CONTEXTO
 import { LoginContextProvider } from '../context/login/LoginContextProvider'; // CONTEXTO
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; // COMPONENTES ROUTER DOM
 import { Layout } from '../pages/layout/Layout'; // COMPONENTE
@@ -12,22 +13,24 @@ import { RegisterForm } from '../components/form/RegisterForm'; // COMPONENTE
 
 const App = () => {
     return (
-        <LoginContextProvider>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Inicio />} />
-                        <Route path="*" element={<Error />} />
-                        <Route path="juegos" element={<Juegos />} />
-                        <Route path="torneos" element={<Torneos />} />
-                        <Route path="login/" element={<LayoutLogin />}>
-                            <Route index element={<LoginForm />} />
-                            <Route path="registro" element={<RegisterForm />} />
+        <UserContextProvider>
+            <LoginContextProvider>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Layout />}>
+                            <Route index element={<Inicio />} />
+                            <Route path="*" element={<Error />} />
+                            <Route path="juegos" element={<Juegos />} />
+                            <Route path="torneos" element={<Torneos />} />
+                            <Route path="login/" element={<LayoutLogin />}>
+                                <Route index element={<LoginForm />} />
+                                <Route path="registro" element={<RegisterForm />} />
+                            </Route>
                         </Route>
-                    </Route>
-                </Routes>
-            </BrowserRouter>
-        </LoginContextProvider>
+                    </Routes>
+                </BrowserRouter>
+            </LoginContextProvider>
+        </UserContextProvider>
     );
 };
 

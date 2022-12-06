@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'; // COMPONENTE ROUTER DOM
-import { useState } from 'react'; // HOOKS
+import { UserContext } from '../../context/user/UserContext'; // CONTEXTO
+import { Link, useNavigate } from 'react-router-dom'; // HOOKS ROUTER DOM
+import { useState, useContext } from 'react'; // HOOKS
 
 const RegisterForm = () => {
     const [registerData, updateRegisterData] = useState({
@@ -16,6 +17,24 @@ const RegisterForm = () => {
             [ev.target.name]: ev.target.value,
         }));
     }; // EVENTO
+
+    const { updateUser, createUser, updateProfileUser } = useContext(UserContext); // AYUDANTES
+
+    const navigate = useNavigate(); // NAVEGACION
+
+    const handleSubmit = async (ev) => {
+        try {
+            ev.preventDefault();
+            const userCredential = await createUser(registerData.email, registerData.password); // SOLICITUD A FIREBASE AUTH
+            await updateProfileUser({
+                displayName: `${registerData.firstName} ${registerData.lastName}`,
+            }); // SOLICITUD A FIREBASE AUTH
+            updateUser(userCredential.user); // ACTUALIZACION DE USUARIO
+            navigate('/'); // REDIRECCIONAMIENTO
+        } catch (error) {
+            console.log(error.code);
+        }
+    };
 
     return (
         <form className="form">
@@ -96,10 +115,13 @@ const RegisterForm = () => {
             </label>
             {/* BOTONES CANCELAR Y REGISTRAR */}
             <div className="form-group">
+                <button onClick={handleSubmit} type="button" className="form-group-btn form-group-btn-register">
+                    SALIR
+                </button>
                 <Link to="/" className="form-group-btn form-group-btn-cancel">
                     Cancelar
                 </Link>
-                <button type="sumbit" className="form-group-btn form-group-btn-register">
+                <button onClick={handleSubmit} type="sumbit" className="form-group-btn form-group-btn-register">
                     Registrate
                 </button>
             </div>
