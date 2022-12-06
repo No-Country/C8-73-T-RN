@@ -54,9 +54,14 @@ Abra http://localhost:3000 en su navegador para ver la aplicación.
 -   interfaz de página error 404.
 -   interfaz inicio de sesión.
 -   interfaz registro de sesión.
+-   funcion iniciar sesion
+-   funcion crear cuenta
 
 # **Futuras actualizaciones**
 
 -   interfaz registro de sesión exitoso.
 -   carrusel de juegos.
 -   cursor dinámico.
+-   loader
+-   interfaz de pagina usuario
+-   interfaz de pagina torneos

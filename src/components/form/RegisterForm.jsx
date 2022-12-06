@@ -8,7 +8,6 @@ const RegisterForm = () => {
         lastName: '',
         email: '',
         password: '',
-        // passwordConfirm: '',
     }); // ESTADO
 
     const handleOnChange = (ev) => {
@@ -94,20 +93,6 @@ const RegisterForm = () => {
                 placeholder="Escribe tu contraseña"
                 value={registerData.password}
             />
-            {/* CONTRASEÑA A CONFIRMAR */}
-            {/* <label className="form-label" htmlFor="passwordConfirm">
-                Confirma tu contraseña
-            </label>
-            <input
-                onChange={handleOnChange}
-                className="form-input"
-                id="passwordConfirm"
-                name="passwordConfirm"
-                type="password"
-                required={true}
-                placeholder="Confirma tu contraseña"
-                value={registerData.passwordConfirm}
-            /> */}
             {/* TERMINOS Y CONDICIONES */}
             <label className="form-terms-label" htmlFor="checkbox">
                 <input className="form-terms-checkbox" type="checkbox" name="checkbox" id="checkbox" />
@@ -115,9 +100,6 @@ const RegisterForm = () => {
             </label>
             {/* BOTONES CANCELAR Y REGISTRAR */}
             <div className="form-group">
-                <button onClick={handleSubmit} type="button" className="form-group-btn form-group-btn-register">
-                    SALIR
-                </button>
                 <Link to="/" className="form-group-btn form-group-btn-cancel">
                     Cancelar
                 </Link>

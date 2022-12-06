@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'; // COMPONENTE ROUTER DOM
-import { useState } from 'react'; // HOOKS
+import { UserContext } from '../../context/user/UserContext'; // CONTEXTO
+import { Link, useNavigate } from 'react-router-dom'; // HOOKS ROUTER DOM
+import { useState, useContext } from 'react'; // HOOKS
 
 const LoginForm = () => {
     const [loginData, updateLoginData] = useState({
@@ -14,6 +15,21 @@ const LoginForm = () => {
         }));
     }; // EVENTO
 
+    const navigate = useNavigate(); // NAVEGACION
+
+    const { updateUser, signInUser } = useContext(UserContext); // AYUDANTES
+
+    const handleSubmit = async (ev) => {
+        try {
+            ev.preventDefault();
+            const userCredential = await signInUser(loginData.email, loginData.password); // SOLICITUD A FIREBASE AUTH
+            updateUser(userCredential.user); // ACTUALIZACION DE USUARIO
+            navigate('/'); // REDIRECCIONAMIENTO
+        } catch (error) {
+            console.log(error.code);
+        }
+    }; // EVENTO
+
     return (
         <form className="form">
             {/* EMAIL */}
@@ -26,7 +42,6 @@ const LoginForm = () => {
                 id="email"
                 name="email"
                 type="gmail"
-                required={true}
                 placeholder="Ingresa tu usuario"
                 value={loginData.email}
             />
@@ -40,7 +55,6 @@ const LoginForm = () => {
                 id="password"
                 name="password"
                 type="password"
-                required={true}
                 placeholder="Escribe tu contraseña"
                 value={loginData.password}
             />
@@ -56,7 +70,7 @@ const LoginForm = () => {
                 <Link to="/" className="form-group-btn form-group-btn-cancel">
                     Cancelar
                 </Link>
-                <button type="sumbit" className="form-group-btn form-group-btn-register">
+                <button onClick={handleSubmit} type="sumbit" className="form-group-btn form-group-btn-register">
                     Registrate
                 </button>
             </div>

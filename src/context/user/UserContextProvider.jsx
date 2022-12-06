@@ -16,11 +16,9 @@ const UserContextProvider = ({ children }) => {
         return () =>
             onAuthStateChanged(auth, (user) => {
                 if (user) {
-                    console.log(user);
                     updateUser(user);
                 } else {
                     updateUser(null);
-                    console.log(user);
                 }
             });
     }, []);
