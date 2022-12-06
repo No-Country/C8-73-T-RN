@@ -1,35 +1,35 @@
-$font: "Poppins", sans-serif;
+$font: 'Poppins', sans-serif;
 $fontColor: #ffffff;
 $background: #ad7fde;
 
 * {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: $font;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
 }
 
 .container-news {
-  background-color: #983ff6;
-  padding-bottom: 50px;
+    background-color: #983ff6;
+    padding-bottom: 50px;
 }
 
 //Participa en torneos.../img
 
 .img-participa {
-  width: 100%;
-  height: 50.618em; /*o rem*/
-  background-image: url("https://res.cloudinary.com/carina-bosio/image/upload/v1669043572/NoCountry/Rectangle_4_iuqnxj.png");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100% 100%; /* Resize the background image to cover the entire container */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  // z-index: 3;
+    width: 100%;
+    height: 50.618em; /*o rem*/
+    background-image: url('https://res.cloudinary.com/carina-bosio/image/upload/v1669043572/NoCountry/Rectangle_4_iuqnxj.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100% 100%; /* Resize the background image to cover the entire container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // z-index: 3;
 }
 
 // .img-part {
@@ -38,130 +38,126 @@ $background: #ad7fde;
 
 // }
 
-.div-text{
-  display:flex;
-  width: 95%;
-  text-align: center;
-  justify-content: center;
+.div-text {
+    display: flex;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
 }
 
 .text-participa {
-  // position: absolute;
-  width: 100%;
-  // padding: 5rem;
-  font-weight: 600;
-  // font-size: 4rem;
-  font-size: clamp(2.5rem, 6.2vw, 8rem); 
-  // font-size: calc(275% + 1.9vw);
-  // line-height: 5.12rem;
-  line-height: clamp(5rem, 10vw, 10rem); 
-  color: $fontColor;
-  
-  hyphens: none;
+    // position: absolute;
+    width: 100%;
+    // padding: 5rem;
+    font-weight: 600;
+    // font-size: 4rem;
+    font-size: clamp(2.5rem, 6.2vw, 8rem);
+    // font-size: calc(275% + 1.9vw);
+    // line-height: 5.12rem;
+    line-height: clamp(5rem, 10vw, 10rem);
+    color: $fontColor;
+
+    hyphens: none;
 }
 
 //Juega en cualquier parte del mundo
 
 .div-parte {
-  color: $fontColor;
-  margin-left: 6.438rem;
-  margin-right: 6.438rem;
+    color: $fontColor;
+    margin-left: 6.438rem;
+    margin-right: 6.438rem;
 
-  // text-align: justify;
+    // text-align: justify;
 }
 
 .title-parte {
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 3.75rem;
-  margin-top: 2.813rem;
-  margin-bottom: 2.188rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3.75rem;
+    margin-top: 2.813rem;
+    margin-bottom: 2.188rem;
 }
 
 .text-parte {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.7rem;
-  hyphens: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    hyphens: none;
 }
 
 //Suscripcion
 
 .suscription {
-  position: absoluta;
-  margin: 3.893rem 6.438rem 0 6.438rem;
-  background-color: #fbbc05;
-  border-radius: 1.048rem;
-  padding: 1.875rem;
-  display: flex;
-
-  @media only screen and (max-width: 1000px) {
+    position: absoluta;
+    margin: 3.893rem 6.438rem 0 6.438rem;
+    background-color: #fbbc05;
+    border-radius: 1.048rem;
+    padding: 1.875rem;
     display: flex;
-    flex-direction: column;
-  }
+
+    @media only screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .title-suscription {
-  // font-size: 2.25rem;
-  font-size: calc(1.06em + 1.06vw);
-  font-weight: 500;
-  line-height: 3.375rem;
+    // font-size: 2.25rem;
+    font-size: calc(1.06em + 1.06vw);
+    font-weight: 500;
+    line-height: 3.375rem;
 }
 
 .text-suscription {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.563rem;
-  width: 82%;
-  hyphens: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.563rem;
+    width: 82%;
+    hyphens: none;
 }
 
 .input-mail {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
 
-  @media only screen and (max-width: 1000px) {
-    margin-top:0.5rem;
-  }
+    @media only screen and (max-width: 1000px) {
+        margin-top: 0.5rem;
+    }
 }
 
-input {
-  width: 26.933rem;
-  height: 3.352rem;
-  padding-left: 0.938rem;
-  border-radius: 0.559rem;
-  // outline: none;
-  background-color: #ffffff;
+.input-style {
+    width: 26.933rem;
+    height: 3.352rem;
+    padding-left: 0.938rem;
+    border-radius: 0.559rem;
+    // outline: none;
+    background-color: #ffffff;
+
+    &::placeholder {
+        color: #cccccc;
+    }
 }
-
-
-
-input::placeholder{
-  color: #CCCCCC;
-}
-
-
 
 .btn-suscription {
-  position: absolute;
-  border-radius: 0.559rem;
-  right: 0px;
-  z-index: 2;
-  border: none;
-  margin: auto 0.938rem;
-  width: 7.332rem;
-  height: 2.584rem;
-  cursor: pointer;
-  color: white;
-  background-color: #fbbc05;
+    position: absolute;
+    border-radius: 0.559rem;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    margin: auto 0.938rem;
+    width: 7.332rem;
+    height: 2.584rem;
+    cursor: pointer;
+    color: white;
+    background-color: #fbbc05;
 }
 
-:disabled{
-  cursor: not-allowed;
+:disabled {
+    cursor: not-allowed;
 }
 
 // .error-mail{
@@ -170,31 +166,31 @@ input::placeholder{
 //   justify-content: center;
 // }
 
-.suscription-mail{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  position: relative;
+.suscription-mail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
 }
 
-.errors{
-display:flex;
-position: absolute;
-justify-content: center;
-align-items: center;
-margin-top: 5rem;
-color: red;
-z-index: 5;
+.errors {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    color: red;
+    z-index: 5;
 }
 
 .swal2-styled.swal2-confirm.swalBtnColor {
-  color: #FFC900;
-  background-color: #983ff6
+    color: #ffc900;
+    background-color: #983ff6;
 }
 
 .swal2-styled.swal2-swalIconColor {
-  color: #FFC900;
+    color: #ffc900;
 }
