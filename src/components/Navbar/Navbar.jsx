@@ -1,5 +1,5 @@
-import { LoginContext } from "../../context/login/LoginContext"; // CONTEXTO
-import { useContext } from "react"; // HOOK
+import { LoginContext } from '../../context/login/LoginContext'; // CONTEXTO
+import { useContext } from 'react'; // HOOK
 
 const Navbar = () => {
     const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
@@ -8,15 +8,12 @@ const Navbar = () => {
 
     return (
         <nav>
-            
-                <span className="title">e/ stadium</span>
-            
-            
-            
+            {/* TITULO */}
+            <span className="title">e/ stadium</span>
+            {/* BUSCADOR */}
             <input type="text" className="search" />
-            
+            {/* NAVEGACIONES */}
             <ul className="navigation">
-             
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -29,6 +26,7 @@ const Navbar = () => {
                 <li>
                     <a href="#">Torneo</a>
                 </li>
+                {/* BOTON INICIAR SESION */}
                 <div className="buttons">
                     <button onClick={handleOnLoginWithOption} className="btn-main">
                         Iniciar Sesión
