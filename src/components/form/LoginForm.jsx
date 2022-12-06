@@ -1,9 +1,18 @@
-import { useNavigate } from 'react-router-dom'; // HOOKS ROUTER DOM
+import { Link } from 'react-router-dom'; // COMPONENTE ROUTER DOM
+import { useState } from 'react'; // HOOKS
 
 const LoginForm = () => {
-    const navigate = useNavigate(); // NAVEGACION
+    const [loginData, updateLoginData] = useState({
+        email: '',
+        password: '',
+    }); // ESTADO
 
-    const handleNavigate = () => navigate('/'); // EVENTO
+    const handleOnChange = (ev) => {
+        updateLoginData((prevLoginData) => ({
+            ...prevLoginData,
+            [ev.target.name]: ev.target.value,
+        }));
+    }; // EVENTO
 
     return (
         <form className="form">
@@ -12,24 +21,28 @@ const LoginForm = () => {
                 Email
             </label>
             <input
+                onChange={handleOnChange}
                 className="form-input"
                 id="email"
                 name="email"
                 type="gmail"
                 required={true}
                 placeholder="Ingresa tu usuario"
+                value={loginData.email}
             />
             {/* CONTRASEÑA */}
             <label className="form-label" htmlFor="password">
                 Contraseña
             </label>
             <input
+                onChange={handleOnChange}
                 className="form-input"
                 id="password"
                 name="password"
                 type="password"
                 required={true}
                 placeholder="Escribe tu contraseña"
+                value={loginData.password}
             />
             {/* OLVIDO DE CONTRASEÑA */}
             <h3 className="form-h3">¿Olvidaste tu contraseña?</h3>
@@ -40,9 +53,9 @@ const LoginForm = () => {
             </label>
             {/* BOTONES CANCELAR Y REGISTRAR */}
             <div className="form-group">
-                <button onClick={handleNavigate} type="button" className="form-group-btn form-group-btn-cancel">
+                <Link to="/" className="form-group-btn form-group-btn-cancel">
                     Cancelar
-                </button>
+                </Link>
                 <button type="sumbit" className="form-group-btn form-group-btn-register">
                     Registrate
                 </button>
