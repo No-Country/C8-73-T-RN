@@ -1,4 +1,10 @@
+import { useNavigate } from 'react-router-dom'; // HOOKS ROUTER DOM
+
 const RegisterForm = () => {
+    const navigate = useNavigate(); // NAVEGACION
+
+    const handleNavigate = () => navigate('/'); // EVENTO
+
     return (
         <form className="form">
             {/* NOMBRE */}
@@ -68,7 +74,9 @@ const RegisterForm = () => {
             </label>
             {/* BOTONES CANCELAR Y REGISTRAR */}
             <div className="form-group">
-                <button className="form-group-btn form-group-btn-cancel">Cancelar</button>
+                <button onClick={handleNavigate} type="button" className="form-group-btn form-group-btn-cancel">
+                    Cancelar
+                </button>
                 <button type="sumbit" className="form-group-btn form-group-btn-register">
                     Registrate
                 </button>
