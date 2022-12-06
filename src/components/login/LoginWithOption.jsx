@@ -1,11 +1,19 @@
 import { LoginContext } from '../../context/login/LoginContext'; // CONTEXTO
+import { useNavigate } from 'react-router-dom'; // HOOK ROUTER DOM
 import { useContext } from 'react'; // HOOK
 
 const LoginWithOption = () => {
     const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
 
+    const navigate = useNavigate(); // NAVEGACION
+
     const handleOnLogin = (ev) => {
         if (ev.target === ev.currentTarget) return updateOnLoginWithOption(false);
+    }; // EVENTO
+
+    const handleNavigate = (to) => {
+        navigate(to);
+        updateOnLoginWithOption(false);
     }; // EVENTO
 
     return (
@@ -19,8 +27,11 @@ const LoginWithOption = () => {
                 <button className="login-with-option-btn login-with-option-btn-apple">Continua con Apple</button>
                 <button className="login-with-option-btn login-with-option-btn-facebook">Continua con Facebook</button>
                 <button className="login-with-option-btn login-with-option-btn-google">Continua con Google</button>
-                <button className="login-with-option-btn login-with-option-btn-correo">Continua con tu correo</button>
-                <button className="login-with-option-btn login-with-option-btn-guest">Continua como invitado</button>
+                <button
+                    onClick={() => handleNavigate('/login')}
+                    className="login-with-option-btn login-with-option-btn-correo">
+                    Continua con tu correo
+                </button>
                 {/* DESCRIPCION */}
                 <p className="login-with-option-p">
                     Al hacer clic en el botón, acepta los{' '}
