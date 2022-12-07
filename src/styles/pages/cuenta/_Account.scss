@@ -1,0 +1,64 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// ESTILOS
+.main-account {
+    padding: var(--padding-main);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.account {
+    @include flex(column, flex-end, flex-start);
+    gap: 1rem;
+    background-image: url('https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670369638/assets/banner-profile_xi7gms.jpg');
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 1rem;
+    padding: 2rem;
+    min-height: clamp(1rem, 80vh, 40rem);
+
+    &-profile {
+        @include flex(row, flex-start, center);
+        gap: 2rem;
+    }
+    &-picture {
+        width: auto;
+
+        & img {
+            height: clamp(1rem, 20vw, 15rem);
+            width: clamp(1rem, 20vw, 15rem);
+            object-fit: cover;
+            object-position: center;
+            border-radius: 100%;
+        }
+    }
+    &-info {
+        @include flex(column, center, flex-start);
+        gap: 1rem;
+    }
+    &-name {
+        font-size: clamp(1rem, 2vw, 3rem);
+        font-weight: 700;
+    }
+    &-data {
+        @include flex(row, center, center);
+        gap: 4rem;
+    }
+    &-data-personal {
+        font-size: clamp(1rem, 1.25vw, 3rem);
+        font-weight: 500;
+    }
+    &-social {
+        @include flex(row, center, center);
+        gap: 1rem;
+    }
+    &-social-icon {
+        width: clamp(1rem, 2vw, 3rem);
+    }
+    &-description {
+        font-size: clamp(1rem, 1.25vw, 3rem);
+        font-weight: 400;
+        text-align: left;
+    }
+}

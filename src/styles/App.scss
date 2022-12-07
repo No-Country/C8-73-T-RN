@@ -11,9 +11,11 @@
 @use './components/hero/Hero';
 @use './components/newsletter/Newsletter';
 
-
 //* PAGINAS
 //? ERROR
 @use './pages/error/Error';
 //? LOGIN
 @use './pages/login/LoginLayout';
+//? CUENTA
+@use './pages/cuenta/Account';
+@use './pages/cuenta/LayoutAccount';
