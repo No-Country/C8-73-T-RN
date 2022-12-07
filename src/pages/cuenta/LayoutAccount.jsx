@@ -7,10 +7,11 @@ const LayoutAccount = () => {
             <ul className="layout-account-ul">
                 <li className="layout-account-li">
                     <NavLink
-                        to="#"
+                        to="/cuenta"
                         className={({ isActive }) =>
                             isActive ? 'layout-account-a layout-account-a-active' : 'layout-account-a '
-                        }>
+                        }
+                        end>
                         Resumen de perfil
                         <div className="layout-account-a-border"></div>
                     </NavLink>
