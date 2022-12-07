@@ -12,6 +12,7 @@ import { RegisterForm } from '../components/form/RegisterForm'; // COMPONENTE
 
 const App = () => {
     return (
+        
         <LoginContextProvider>
             <BrowserRouter>
                 <Routes>

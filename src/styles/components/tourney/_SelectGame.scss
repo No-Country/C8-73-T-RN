@@ -3,150 +3,126 @@
 $font: "Poppins", sans-serif;
 $fontColor: #ffffff;
 
-.tournament-background {
+.search-game {
   // @include flex(row, center, center);
   position: fixed;
-  width: 69.563rem;
-  height: 37.75rem;
+  width: 1116px;
+  height: 604px;
   background-color: #0c074a;
   border-radius: 16px;
-  margin-left: 24.2%;
+  margin-left: 20%;
   margin-top: 12%;
   z-index: 3;
 }
 
-.background-name-modal {
+.header-game{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.background-name-modal-game {
   background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
   border-radius: 0px 40px 40px 0px;
   width: 30.375rem;
   height: 5rem;
   margin-top: 3.438rem;
+  display:flex;
+  justify-content: space-between;
 }
 
-.name-modal {
+.name-modal-game {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2rem;
 }
 
-.title-modal {
+.title-modal-game {
   position: absolute;
   width: 19.563rem;
   height: 3.688rem;
   left: 6.375rem;
   top: 4.063rem;
-
-  /* Heading/medium */
-
-  font-family: "Poppins";
+ font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 130%;
-  /* or 42px */
-
   display: flex;
   align-items: center;
 
   color: #ffffff;
 }
 
-.btn-creatorneo {
-  position: absolute;
-  left: 31.99%;
-  right: 31.63%;
-  top: 29.97%;
-  bottom: 60.93%;
-  background: #fbbc05;
-  border-radius: 29.0411px;
-  font-family: $font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  cursor: pointer;
+.searchgame-container{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-left: unset;
+    width: 302.25px;
+    height: 40px;
+    border-radius: 27px;
+    align-items: center;
+    margin-top: 3.438rem;
+    margin-right: 23.75px;
 }
 
-.duplica {
-  position: absolute;
-  width: 350px;
-  height: 24px;
-  left: 381px;
-  top: 257px;
 
-  /* Text/regular/Bold */
-
-  font-family: $font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-
-  text-align: center;
-}
-
-.listado-10 {
-  position: absolute;
-  width: 350px;
-  height: 18px;
-  left: 385px;
-  top: 286px;
-
-  /* Text/tiny/Medium */
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 150%;
-  /* identical to box height, or 18px */
-
-  text-align: center;
-
-  color: #ffffff;
-}
-
-.frame-carousel {
+.frame-games {
   position: absolute;
   width: 1089px;
-  height: 221px;
+  height: auto;
   left: 24px;
-  top: 344px;
-  // overflow-x: scroll;
-  border: 1px solid #ffffff;
+  top: 200px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  
+
+  // border: 1px solid #ffffff;
 }
 
 //_______________________________________________________________
-.slider {
+.slider-game {
   width: 100%; /* card * 4 + margin * 4 */
   text-align: center;
   position: relative;
   // padding-left: 15px;
   // padding-right: 15px;
+  
+  
+  
 }
 
-.slides {
+.slides-game {
   width: 100%; /* card * 4 + margin * 4 */
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   transition: all .5s ease;
+  overflow-y: scroll;
+  height: 403px;
   
   
 }
-.slides .slide {
+.slides-game .slide-game {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 390.89px;
-  height: 220.77px;
+  width: 340px;
+  height:  238.1px;
   margin-right: 15px;
   // margin-left: 15px;
-  border-radius: 16px;
-  background: #eee;
+  border-radius: 20.588px;
+  // background: #eee;
   transition: transform 0.5s;
   display: flex;
   justify-content: center;
@@ -155,8 +131,8 @@ $fontColor: #ffffff;
   transform: translateX(0px);
 }
 
-.slider .btn-prev,
-.slider .btn-next{
+.slider-game .btn-prev,
+.slider-game .btn-next{
   position: absolute;
   width: 50px;
   height: 50px;
@@ -167,14 +143,14 @@ $fontColor: #ffffff;
   box-shadow: 0 0 15px rgba(17,17,17,.15);
   cursor: pointer;
 }
-.slider .btn-prev{
+.slider-game .btn-prev{
   left: -5px;
 }
-.slider .btn-next{
+.slider-game .btn-next{
   right: -5px;
 }
-.slider .btn-prev:after,
-.slider .btn-next:after{
+.slider-game .btn-prev:after,
+.slider-game .btn-next:after{
   content: "";
   position: absolute;
   width: 10px;
@@ -182,21 +158,26 @@ $fontColor: #ffffff;
   border-top: 1px solid #fb2356;
   border-right: 1px solid #fb2356;
 }
-.slider .btn-prev:after{
+.slider-game .btn-prev:after{
   left: 50%;
   top: 50%;
   transform-origin: top right;
   transform: rotate(-135deg) translate(100%, -100%);
 }
-.slider .btn-next:after{
+.slider-game .btn-next:after{
       left: 50%;
     top: 50%;
     transform-origin: top right;
       transform: rotate(45deg) translate(-25%, 50%);
 }
-.carrusel-wrap .bx-controls .bx-controls-direction > .btn-prev.invisible,
-.carrusel-wrap .bx-controls .bx-controls-direction > .btn-next.invisible {
+.carrusel-wrap-game .bx-controls .bx-controls-direction > .btn-prev.invisible,
+.carrusel-wrap-game .bx-controls .bx-controls-direction > .btn-next.invisible {
     opacity: 0;
     pointer-events: none;
+}
+
+.img-slide{
+  border-radius: 16px;
+  
 }
 

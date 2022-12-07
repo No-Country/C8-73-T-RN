@@ -151,7 +151,7 @@ input::placeholder{
   position: absolute;
   border-radius: 0.559rem;
   right: 0px;
-  z-index: 2;
+  // z-index: 2;
   border: none;
   margin: auto 0.938rem;
   width: 7.332rem;
@@ -159,7 +159,13 @@ input::placeholder{
   cursor: pointer;
   color: white;
   background-color: #fbbc05;
+
+  // :hover{
+  //   background-color: #FFE04B;
+  // }
 }
+
+
 
 :disabled{
   // cursor: not-allowed;
@@ -190,7 +196,7 @@ justify-content: center;
 align-items: center;
 margin-top: 5rem;
 color: red;
-z-index: 5;
+// z-index: 5;
 }
 
 .swal2-styled.swal2-confirm.swalBtnColor {

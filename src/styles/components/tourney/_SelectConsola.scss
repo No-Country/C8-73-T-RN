@@ -1,0 +1,114 @@
+@import "../.././global/mixins";
+
+$font: "Poppins", sans-serif;
+$fontColor: #ffffff;
+
+.search-consola {
+//  @include flex(row, center, center);
+  position: fixed;
+  width: 1116px;
+  height: 604px;
+  background-color: #0c074a;
+  border-radius: 16px;
+  margin-left: 20%;
+  margin-top: 12%;
+  z-index: 3;
+}
+
+.header-consola{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.background-name-modal-consola {
+  background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
+  border-radius: 0px 40px 40px 0px;
+  width: 30.375rem;
+  height: 5rem;
+  margin-top: 3.438rem;
+  display:flex;
+  justify-content: space-between;
+}
+
+.name-modal-consola {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.title-modal-consola {
+  position: absolute;
+  width: 19.563rem;
+  height: 3.688rem;
+  left: 6.375rem;
+  top: 4.063rem;
+ font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.searchconsola-container{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    // margin-left: unset;
+    width: 302.25px;
+    height: 40px;
+    border-radius: 27px;
+    align-items: center;
+    margin-top: 3.438rem;
+    margin-right: 23.75px;
+}
+
+.frame-consolas{
+  position: absolute;
+  width: 1060px;
+  height: auto;
+  margin: 1.5rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // border: 1px solid white;
+}
+
+.consola{
+width: 260px;
+height: 178.69px;
+margin:15px;
+background: #D9D9D9;
+border-radius: 15.4508px;
+@include flex(column, center, center);
+// display:flex;
+// justify-content: center;
+// align-items: center;
+}
+
+.name-consola{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+display: flex;
+align-items: center;
+color: #000000;
+}
+
+.pc{
+  height: 67px;
+  width: 67px;
+}
+
+.consolas-juegos{
+  width: 171px;
+}

@@ -1,0 +1,90 @@
+@import "../.././global/mixins";
+
+.tournament-form-data {
+  position: fixed;
+  width: 69.563rem;
+  height: 37.75rem;
+  background-color: #0c074a;
+  border-radius: 16px;
+  margin-left: 20%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  z-index: 3;
+}
+
+.background-name-modal-form{
+    background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
+  border-radius: 0px 40px 40px 0px;
+  width: 30.375rem;
+  height: 5rem;
+  margin-top: 3.438rem;
+  display:flex;
+  justify-content: space-between;
+}
+
+.form-data {
+  @include flex(column, center, center);
+  position: absolute;
+  width: 100%;
+  height: 83.99px;
+  top: 350px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-input {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 20px;
+}
+
+.input-data {
+  width: 371.72px;
+  height: 51.99px;
+  margin: 20px;
+}
+
+::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #afafaf;
+}
+
+.btn-form-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+}
+
+.btn-data-cancelar {
+  width: 175.92px;
+  height: 55px;
+  border-radius: 29px;
+  background-color: #ffffff;
+  color: #000;
+  margin: 35px ;
+}
+
+.btn-data-unirse {
+  width: 175.92px;
+  height: 55px;
+  border-radius: 29px;
+  background-color: #fbbc05;
+  margin: 35px 0;
+}

@@ -35,16 +35,16 @@ const CreateATournament = () => {
         <div id="carrusel"className="frame-carousel">
         <div id="carrusel" class="slider">
           <div id="carrusel-slides" class="slides">
-            <div class="slide">1</div>
-            <div class="slide">2</div>
-            <div class="slide">3</div>
-            <div class="slide">4</div>
-            <div class="slide">5</div>
-            <div class="slide">6</div>
-            <div class="slide">7</div>
-            <div class="slide">8</div>
-            <div class="slide">9</div>
-            <div class="slide">10</div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
+            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
           </div>
           {/* <button class="btn-prev" />
           <button class="btn-next" /> */}

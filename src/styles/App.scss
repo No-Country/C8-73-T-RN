@@ -10,10 +10,11 @@
 @use './components/footer/Footer';
 @use './components/hero/Hero';
 @use './components/newsletter/Newsletter';
-@use './components/tourney/Tourney';
-@use './components//tourney/Tournament';
-
-
+@use './components/tourney/CreateTourney';
+@use './components/tourney/CreateATournament';
+@use './components/tourney/SelectGame';
+@use './components/tourney/SelectConsola';
+@use './components/tourney/TourneyData';
 
 //* PAGINAS
 //? ERROR
