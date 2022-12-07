@@ -13,6 +13,7 @@ import { LayoutLogin } from '../pages/login/LayoutLogin'; // COMPONENTE
 import { LoginForm } from '../components/form/LoginForm'; // COMPONENTE
 import { RegisterForm } from '../components/form/RegisterForm'; // COMPONENTE
 import { Account } from '../pages/cuenta/Account'; // COMPONENTE
+import { ProfileSummary, NextTournaments, ProgrammedTournaments } from '../components/account/export'; // COMPONENTES
 
 const App = () => {
     return (
@@ -36,13 +37,16 @@ const App = () => {
                                 <Route path="registro" element={<RegisterForm />} />
                             </Route>
                             <Route
-                                path="cuenta"
+                                path="cuenta/"
                                 element={
                                     <ProtectedRoute>
                                         <Account />
                                     </ProtectedRoute>
-                                }
-                            />
+                                }>
+                                <Route index element={<ProfileSummary />} />
+                                <Route path="mistorneos" element={<NextTournaments />} />
+                                <Route path="proximostorneos" element={<ProgrammedTournaments />} />
+                            </Route>
                         </Route>
                     </Routes>
                 </BrowserRouter>
