@@ -4,6 +4,8 @@ import { LoginWithOption } from "../.././components/login/LoginWithOption"; // C
 import { Navbar } from "../../components/navbar/Navbar"; // COMPONENTE
 import { useContext } from "react"; // HOOKS
 import {Footer} from "../../components/footer/Footer";
+import PortadaHero from "../../components/hero/PortadaHero";
+import Categories from "../../components/categories/Categories";
 
 const Layout = () => {
     const { onLoginWithOption } = useContext(LoginContext); // AYUDANTES
@@ -17,6 +19,13 @@ const Layout = () => {
                 <Navbar />
             </header>
             {/* CONTENIDO */}
+
+            {/* CONTENIDO PORTADA HERO */}
+            <PortadaHero />
+
+            {/* CONTENIDO CATEGORIAS JUEGOS */}
+            <Categories />
+
             <Outlet />
             {/* COMPONENTE FOOTER */}
             <Footer/>
