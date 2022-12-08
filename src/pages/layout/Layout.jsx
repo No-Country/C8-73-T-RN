@@ -1,7 +1,7 @@
 import { LoginContext } from "../../context/login/LoginContext"; // CONTEXTO
 import { Outlet } from "react-router-dom"; // COMPONENTE REACT ROUTER
-import { LoginWithOption } from "../.././components/login/LoginWithOption"; // COMPONENTE
-import { Navbar } from "../../components/navbar/Navbar"; // COMPONENTE
+import { LoginWithOption } from "../../components/login/LoginWithOption"; // COMPONENTE
+import  {Navbar}  from "../../components/Navbar/Navbar"; // COMPONENTE
 import { useContext } from "react"; // HOOKS
 import {Footer} from "../../components/footer/Footer";
 import PortadaHero from "../../components/hero/PortadaHero";
@@ -16,14 +16,14 @@ const Layout = () => {
             {onLoginWithOption && <LoginWithOption />}
             {/* COMPONENTE NAVBAR */}
             <header>
-                <Navbar />
+            <Navbar/>
             </header>
             {/* CONTENIDO */}
 
             {/* CONTENIDO PORTADA HERO */}
             <PortadaHero />
 
-            {/* CONTENIDO CATEGORIAS JUEGOS */}
+            {/* CONTENIDO CATEGORIAS */}
             <Categories />
 
             <Outlet />

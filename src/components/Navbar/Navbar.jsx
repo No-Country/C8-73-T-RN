@@ -37,4 +37,4 @@ const Navbar = () => {
     );
 };
 
-export { Navbar };
+export {Navbar};
