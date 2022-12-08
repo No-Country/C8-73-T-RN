@@ -56,6 +56,7 @@ Abra http://localhost:3000 en su navegador para ver la aplicación.
 -   interfaz registro de sesión.
 -   funcion iniciar sesion
 -   funcion crear cuenta
+-   interfaz de pagina usuario
 
 # **Futuras actualizaciones**
 
@@ -63,5 +64,4 @@ Abra http://localhost:3000 en su navegador para ver la aplicación.
 -   carrusel de juegos.
 -   cursor dinámico.
 -   loader
--   interfaz de pagina usuario
 -   interfaz de pagina torneos
