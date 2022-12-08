@@ -1,10 +1,7 @@
 import React from "react";
 import CategoriesGames from "./CategoriesGames";
 import CategoriesTrend from "./CategoriesTrend";
-
 const Categories = () => {
-
-
 
     return(
         <div className="category-container">
