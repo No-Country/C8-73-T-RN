@@ -1,8 +1,13 @@
+import { NextTournaments, FavoriteGames, ProgrammedTournaments } from './export'; // COMPONENTES
+
 const ProfileSummary = () => {
     return (
-        <>
-            <h2>Resumen de perfil</h2>
-        </>
+        <div className="profile-summary">
+            {/* CONTENIDO */}
+            <NextTournaments className="profile-summary-art-one" />
+            <FavoriteGames className="profile-summary-art-two" />
+            <ProgrammedTournaments className="profile-summary-art-three" />
+        </div>
     );
 };
 
