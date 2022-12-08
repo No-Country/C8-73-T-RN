@@ -10,6 +10,10 @@
 @use './components/footer/Footer';
 @use './components/hero/Hero';
 @use './components/newsletter/Newsletter';
+@use './components/account/ProfileSummary';
+@use './components/account/NextTournaments';
+@use './components/account/FavoriteGames';
+@use './components/account/ProgrammedTournaments';
 
 //* PAGINAS
 //? ERROR
