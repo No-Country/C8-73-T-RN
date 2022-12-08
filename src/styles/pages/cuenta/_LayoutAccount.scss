@@ -5,13 +5,11 @@
 .layout-account {
     @include flex(column, center, flex-start);
     gap: 1rem;
-    background-color: lightgray;
 
     &-ul {
         width: 100%;
-        @include flex(row, center, center);
+        @include flex(row, flex-start, center);
         gap: 5rem;
-        background-color: var(--background-one);
         padding: 3rem;
     }
     &-a {
