@@ -2,6 +2,8 @@
 
 # **Acerca del Proyecto**
 
+Somos una plataforma de juegos en línea y deportes electrónicos para jugadores y organizadores de torneos donde los gamers podrán descubrir torneos y participar, y los organizadores de torneos podrán crear y administrar sus torneos y construir sus propias comunidades.
+
 # **¿Qué tecnologias usaron?**
 
 Se uso `ReactJs` para la interfaz, `Sass` para los estilos, `Firebase Auth` para la autenticacion del usuario y `Firebase Firestore` para la base de datos de la plataforma.
@@ -15,8 +17,6 @@ Se uso `ReactJs` para la interfaz, `Sass` para los estilos, `Firebase Auth` para
 > `Marcelo Llerena` | Frontend Developer.
 >
 > `Carina Bosio` | Frontend Developer.
->
-> `Josué Valenzuela` | Frontend Developer.
 >
 > `Ramiro Jimenez` | Uxer.
 
