@@ -1,11 +1,9 @@
-import { LoginContext } from "../../context/login/LoginContext"; // CONTEXTO
-import { Outlet } from "react-router-dom"; // COMPONENTE REACT ROUTER
-import { LoginWithOption } from "../../components/login/LoginWithOption"; // COMPONENTE
-import  {Navbar}  from "../../components/navbar/Navbar"; // COMPONENTE
-import { useContext } from "react"; // HOOKS
-import {Footer} from "../../components/footer/Footer";
-
-
+import { LoginContext } from '../../context/login/LoginContext'; // CONTEXTO
+import { Outlet } from 'react-router-dom'; // COMPONENTE REACT ROUTER
+import { LoginWithOption } from '../.././components/login/LoginWithOption'; // COMPONENTE
+import { Footer } from '../../components/footer/Footer'; // COMPONENTE
+import { Header } from '../../components/header/Header'; // COMPONENTE
+import { useContext } from 'react'; // HOOKS
 
 const Layout = () => {
     const { onLoginWithOption } = useContext(LoginContext); // AYUDANTES
@@ -14,13 +12,11 @@ const Layout = () => {
         <>
             {/* COMPONENTE LOGIN WITH OPTION */}
             {onLoginWithOption && <LoginWithOption />}
-            {/* COMPONENTE NAVBAR */}
-            <header>
-            <Navbar/>
-            </header>
+            {/* COMPONENTE */}
+            <Header />
             {/* CONTENIDO */}
             <Outlet />
-            {/* COMPONENTE FOOTER */}
+            {/* COMPONENTE */}
             <Footer />
         </>
     );

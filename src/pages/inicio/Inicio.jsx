@@ -1,17 +1,15 @@
-import Categories from '../../components/categories/Categories';
-import PortadaHero from '../../components/hero/PortadaHero';
-import { Newsletter } from '../../components/newsletter/Newsletter'; // COMPONENTE
+import { Newsletter } from '../../components/newsletter/newsletter'; // COMPONENTE
+import Categories from '../../components/categories/Categories'; // COMPONENTE
+import PortadaHero from '../../components/hero/PortadaHero'; // COMPONENTE
 
 const Inicio = () => {
     return (
         <main>
-            {/* CONTENIDO PORTADA HERO */}
+            {/* COMPONENTE */}
             <PortadaHero />
-
-            {/* CONTENIDO CATEGORIAS */}
+            {/* COMPONENTE */}
             <Categories />
-
-
+            {/* COMPONENTE */}
             <Newsletter />
         </main>
     );
