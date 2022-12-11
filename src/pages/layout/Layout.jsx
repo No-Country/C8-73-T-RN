@@ -6,6 +6,7 @@ import { useContext } from "react"; // HOOKS
 import {Footer} from "../../components/footer/Footer";
 
 
+
 const Layout = () => {
     const { onLoginWithOption } = useContext(LoginContext); // AYUDANTES
 
@@ -20,7 +21,7 @@ const Layout = () => {
             {/* CONTENIDO */}
             <Outlet />
             {/* COMPONENTE FOOTER */}
-            <Footer/>
+            <Footer />
         </>
     );
 };

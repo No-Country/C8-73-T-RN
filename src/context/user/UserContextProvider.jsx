@@ -13,14 +13,13 @@ const UserContextProvider = ({ children }) => {
     const [user, updateUser] = useState(false); // ESTADO
 
     useEffect(() => {
-        return () =>
-            onAuthStateChanged(auth, (user) => {
-                if (user) {
-                    updateUser(user);
-                } else {
-                    updateUser(null);
-                }
-            });
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                updateUser(user);
+            } else {
+                updateUser(null);
+            }
+        });
     }, []);
 
     const createUser = (email, password) => createUserWithEmailAndPassword(auth, email, password);
