@@ -1,4 +1,4 @@
-const ProgrammedTournaments = ({ className }) => {
+const ProgrammedTournaments = ({ className, title, link, search, filter }) => {
     return (
         <article className={`programmed-tournaments ${className ?? ''}`}>
             <header className="programmed-tournaments-header">
@@ -7,28 +7,52 @@ const ProgrammedTournaments = ({ className }) => {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
                     </svg>
-                    Torneos programados
+                    {title}
                 </h2>
+                {/* LINK VER TODOS */}
+                {link && (
+                    <a className="next-tournaments-header-a" href="#">
+                        Ver todos
+                        <svg
+                            version="1.1"
+                            id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 64 64"
+                            xmlSpace="preserve">
+                            <path
+                                d="M43,31.1L43,31.1l-1.3-1.3l0,0L28.1,16.2c-0.6-0.6-1.6-0.6-2.2,0c-0.6,0.6-0.6,1.6,0,2.2L39.6,32L25.9,45.6
+	c-0.6,0.6-0.6,1.6,0,2.2c0.6,0.6,1.6,0.6,2.2,0l13.6-13.6v0l1.3-1.3C43.5,32.4,43.5,31.6,43,31.1z"
+                            />
+                        </svg>
+                    </a>
+                )}
                 {/* BUSCADOR */}
-                <div className="programmed-tournaments-header-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                    </svg>
-                    <input type="search" name="search" id="search" placeholder="Busca tu juego" />
-                </div>
+                {search && (
+                    <div className="programmed-tournaments-header-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                        <input type="search" name="search" id="search" placeholder="Busca tu juego" />
+                    </div>
+                )}
                 {/* FILTROS */}
-                <div className="programmed-tournaments-header-filter">
-                    {/* ICON */}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                    </svg>
-                    {/* NOMBRE */}
-                    <span className="programmed-tournaments-header-filter-name">TODOS LOS TORNEOS</span>
-                    {/* ICON */}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                    </svg>
-                </div>
+                {filter && (
+                    <div className="programmed-tournaments-header-filter">
+                        {/* ICON */}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                        {/* NOMBRE */}
+                        <span className="programmed-tournaments-header-filter-name">TODOS LOS TORNEOS</span>
+                        {/* ICON */}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                    </div>
+                )}
             </header>
             {/* CONTENIDO */}
             <article className="programmed-tournaments-art">

@@ -45,7 +45,12 @@ const App = () => {
                                 }>
                                 <Route index element={<ProfileSummary />} />
                                 <Route path="mistorneos" element={<NextTournaments />} />
-                                <Route path="proximostorneos" element={<ProgrammedTournaments />} />
+                                <Route
+                                    path="proximostorneos"
+                                    element={
+                                        <ProgrammedTournaments title="Torneos programados" search={true} filter={true} />
+                                    }
+                                />
                             </Route>
                         </Route>
                     </Routes>

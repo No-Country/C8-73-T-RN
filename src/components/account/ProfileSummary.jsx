@@ -3,10 +3,17 @@ import { NextTournaments, FavoriteGames, ProgrammedTournaments } from './export'
 const ProfileSummary = () => {
     return (
         <div className="profile-summary">
-            {/* CONTENIDO */}
+            {/* COMPONENTE */}
             <NextTournaments className="profile-summary-art-one" />
+            {/* COMPONENTE */}
             <FavoriteGames className="profile-summary-art-two" />
-            <ProgrammedTournaments className="profile-summary-art-three" />
+            {/* COMPONENTE */}
+            <ProgrammedTournaments
+                className="profile-summary-art-three"
+                title="Torneos programados"
+                search={true}
+                filter={true}
+            />
         </div>
     );
 };
