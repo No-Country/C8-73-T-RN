@@ -25,7 +25,14 @@ const App = () => {
                             <Route index element={<Inicio />} />
                             <Route path="*" element={<Error />} />
                             <Route path="juegos" element={<Juegos />} />
-                            <Route path="torneos" element={<Torneos />} />
+                            <Route
+                                path="torneos"
+                                element={
+                                    <ProtectedRoute>
+                                        <Torneos />
+                                    </ProtectedRoute>
+                                }
+                            />
                             <Route
                                 path="login/"
                                 element={
