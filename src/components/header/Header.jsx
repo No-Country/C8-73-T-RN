@@ -6,7 +6,7 @@ import { useContext, useState } from 'react'; // HOOKS
 const Header = () => {
     const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
 
-    const { user } = useContext(UserContext); // AYUDANTES
+    const { user, signOutUser } = useContext(UserContext); // AYUDANTES
 
     const [onPhotoUser, updateOnPhotoUser] = useState(null); // ESTADO
 
@@ -20,6 +20,11 @@ const Header = () => {
 
     const handleOnUserOverlay = (ev) => {
         if (ev.target === ev.currentTarget) return updateOnPhotoUser(null);
+    }; // EVENTO
+
+    const handleSignOutUser = () => {
+        updateOnPhotoUser(null);
+        signOutUser();
     }; // EVENTO
 
     return (
@@ -53,7 +58,9 @@ const Header = () => {
                             </NavLink>
                             <ul className={`nav-user-ul ${onPhotoUser ?? ''}`}>
                                 <li className="nav-user-li">Editar perfil</li>
-                                <li className="nav-user-li">Cerrar sesión</li>
+                                <li onClick={handleSignOutUser} className="nav-user-li">
+                                    Cerrar sesión
+                                </li>
                             </ul>
                             <div
                                 onClick={handleOnUserOverlay}

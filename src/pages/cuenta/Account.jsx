@@ -1,10 +1,6 @@
-import { UserContext } from '../../context/user/UserContext'; // CONTEXTO
-import { useContext } from 'react'; // HOOKS
-import { LayoutAccount } from './LayoutAccount';
+import { LayoutAccount } from './LayoutAccount'; // COMPONENTE
 
 const Account = () => {
-    const { signOutUser } = useContext(UserContext); // AYUDANTES
-
     return (
         <main className="main-account">
             {/* CONTENIDO */}
@@ -57,7 +53,6 @@ const Account = () => {
                 <p className="account-description">Hola, soy Mariana, soy gamer y me encantan los shooters</p>
             </section>
             <LayoutAccount />
-            <button onClick={() => signOutUser()}>cerrar SESION</button>
         </main>
     );
 };
