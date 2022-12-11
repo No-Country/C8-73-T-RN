@@ -1,0 +1,93 @@
+@import "../.././global/mixins";
+
+$font: "Poppins", sans-serif;
+$fontColor: #ffffff;
+
+
+
+.set-background {
+  position: fixed;
+  width: 881px;
+  height: 510px;
+  background-color: #0c074a;
+  border-radius: 16px;
+  margin-left: 27%;
+  margin-top: 12%;
+  // z-index: 3;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.background-set{
+  position: absolute;
+  width: 480px;
+  height: 80px;
+  left: 200px;
+  top: 48px;
+  background: linear-gradient(91.15deg, #FB2356 7.43%, #140C71 89%);
+  border-radius: 40px;
+  display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+.set-modal{
+  
+width: 490px;
+height: 47px;
+
+// top: 65px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 37.1387px;
+line-height: 130%;
+/* or 48px */
+color: #FFFFFF;
+}
+
+.torneo-creado{
+  position: absolute;
+width: 489.77px;
+height: 159px;
+left: 196px;
+top: 252px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 37.1387px;
+line-height: 130%;
+/* or 48px */
+
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+
+.trofeo{
+ position:absolute;
+  height: 137px;
+  width: 137px;
+  margin-top:17%;
+
+}
+
+.btn-set{
+  position: absolute;
+left: 40.41%;
+right: 40.36%;
+top: 79.71%;
+bottom: 10.09%;
+background: #FBBC05;
+border-radius: 29.0411px;
+}

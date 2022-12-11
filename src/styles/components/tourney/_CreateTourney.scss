@@ -11,6 +11,7 @@ $font: "Poppins", sans-serif;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.699);
   z-index: 1;
+   
 }
 
 .tourney-grid {
@@ -20,6 +21,7 @@ $font: "Poppins", sans-serif;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding: 0.5rem;
+  
 }
 
 .grid-container {
@@ -33,6 +35,7 @@ $font: "Poppins", sans-serif;
   border-bottom: 1px solid white;
   @include grid-crear-torneo(column, center, center, center);
   padding: 1.5rem 2.5rem;
+  cursor: pointer;
 }
 
 .grid-sup-der {
@@ -87,8 +90,21 @@ $font: "Poppins", sans-serif;
   line-height: 16px;
 }
 
-.img-arena {
-  color: white;
+.img-crear-equipo {
+ 
+  width: 48.4px;
+  height: 48.11px;
+  background-color: #fb2356;
+  background-size: 300%;
+  background-clip: content-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.img-crear-arena{
   width: 48.4px;
   height: 48.11px;
   background-color: #fb2356;
@@ -114,3 +130,5 @@ i {
   align-items: center;
   margin-bottom: 0.5rem;
 }
+
+

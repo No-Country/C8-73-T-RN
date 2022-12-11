@@ -42,7 +42,7 @@ $fontColor: #ffffff;
 
 .title-modal-consola {
   position: absolute;
-  width: 19.563rem;
+  width: 25rem;
   height: 3.688rem;
   left: 6.375rem;
   top: 4.063rem;
@@ -58,16 +58,16 @@ $fontColor: #ffffff;
 }
 
 .searchconsola-container{
-    position: relative;
-    display: flex;
-    justify-content: end;
-    // margin-left: unset;
-    width: 302.25px;
-    height: 40px;
-    border-radius: 27px;
-    align-items: center;
-    margin-top: 3.438rem;
-    margin-right: 23.75px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-left: unset;
+  width: 302.25px;
+  height: 40px;
+  border-radius: 27px;
+  align-items: center;
+  margin-top: 3.438rem;
+  margin-right: 23.75px;
 }
 
 .frame-consolas{
@@ -88,6 +88,7 @@ margin:15px;
 background: #D9D9D9;
 border-radius: 15.4508px;
 @include flex(column, center, center);
+cursor: pointer;
 // display:flex;
 // justify-content: center;
 // align-items: center;
@@ -100,6 +101,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 150%;
 display: flex;
+margin-top:15px;
 align-items: center;
 color: #000000;
 }

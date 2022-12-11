@@ -30,19 +30,19 @@ $fontColor: #ffffff;
   height: 5rem;
   margin-top: 3.438rem;
   display:flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .name-modal-game {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .title-modal-game {
   position: absolute;
-  width: 19.563rem;
+  width: 25rem;
   height: 3.688rem;
   left: 6.375rem;
   top: 4.063rem;
@@ -69,6 +69,25 @@ $fontColor: #ffffff;
     margin-top: 3.438rem;
     margin-right: 23.75px;
 }
+
+.input-search{
+  padding-left: 50px;
+}
+
+
+.input-icon {
+  color: #D2D2D2;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
 
 
 .frame-games {
@@ -110,10 +129,17 @@ $fontColor: #ffffff;
   -webkit-overflow-scrolling: touch;
   transition: all .5s ease;
   overflow-y: scroll;
+ 
   height: 403px;
-  
-  
+
+
 }
+
+.slides-game::-webkit-scrollbar {
+  display: none;
+}
+
+
 .slides-game .slide-game {
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -176,8 +202,9 @@ $fontColor: #ffffff;
     pointer-events: none;
 }
 
-.img-slide{
+.img-slide-game{
   border-radius: 16px;
+  cursor: pointer;
   
 }
 

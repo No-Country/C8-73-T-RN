@@ -21,13 +21,22 @@ $fontColor: #ffffff;
   width: 30.375rem;
   height: 5rem;
   margin-top: 3.438rem;
+  display: flex;
+  
+  
+}
+
+.icono-control-de-juego {
+  width: 80px;
+  height: 63.34px;
+  
 }
 
 .name-modal {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .title-modal {
@@ -114,17 +123,14 @@ $fontColor: #ffffff;
   height: 221px;
   left: 24px;
   top: 344px;
-  // overflow-x: scroll;
-  // border: 1px solid #ffffff;
-}
+ }
 
 //_______________________________________________________________
 .slider {
   width: 100%; /* card * 4 + margin * 4 */
   text-align: center;
   position: relative;
-  // padding-left: 15px;
-  // padding-right: 15px;
+
 }
 
 .slides {
@@ -134,10 +140,14 @@ $fontColor: #ffffff;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  transition: all .5s ease;
-  
-  
+  transition: all 0.5s ease;
+
 }
+// .slides::-webkit-scrollbar {
+//   display: none;
+// }
+
+
 .slides .slide {
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -155,53 +165,87 @@ $fontColor: #ffffff;
   transform: translateX(0px);
 }
 
-.slider .btn-prev,
-.slider .btn-next{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: white;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(17,17,17,.15);
-  cursor: pointer;
-}
-.slider .btn-prev{
-  left: -5px;
-}
-.slider .btn-next{
-  right: -5px;
-}
-.slider .btn-prev:after,
-.slider .btn-next:after{
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-top: 1px solid #fb2356;
-  border-right: 1px solid #fb2356;
-}
-.slider .btn-prev:after{
-  left: 50%;
-  top: 50%;
-  transform-origin: top right;
-  transform: rotate(-135deg) translate(100%, -100%);
-}
-.slider .btn-next:after{
-      left: 50%;
-    top: 50%;
-    transform-origin: top right;
-      transform: rotate(45deg) translate(-25%, 50%);
-}
-.carrusel-wrap .bx-controls .bx-controls-direction > .btn-prev.invisible,
-.carrusel-wrap .bx-controls .bx-controls-direction > .btn-next.invisible {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.img-slide{
+.img-slide {
   border-radius: 16px;
-  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
 }
 
+.data-torneo {
+  background-color: #eb2f93;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 58px;
+  padding: 3%;
+  border-radius: 0px 0px 15.0731px 15.0731px;
+}
+
+.data-row-1 {
+  display: flex;
+  width: 100%;
+}
+
+.data-estadio {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.49538px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+.data-estado {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.49538px;
+  line-height: 150%;
+  /* or 14px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.data-arena {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.6605px;
+  line-height: 150%;
+  /* or 19px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.nombre-juego {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 58px;
+  padding: 3%;
+  border-radius: 0px 0px 15.0731px 15.0731px;
+}
+
+.data-cita {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3%;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 9.49538px;
+line-height: 150%;
+}

@@ -88,3 +88,19 @@
   background-color: #fbbc05;
   margin: 35px 0;
 }
+
+
+:disabled{
+  // cursor: not-allowed;
+  background-color: #898989;
+}
+
+.errors-data{
+display:flex;
+position: absolute;
+justify-content: center;
+align-items: center;
+margin-top: -0.9rem;
+margin-left: 1.5rem;
+color: red;
+}

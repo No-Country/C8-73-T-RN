@@ -1,54 +1,229 @@
-// import { CarouselTorneos } from "./carousel-torneos";
+import { LoginContext } from "../../context/login/LoginContext"; //CONTEXTO
+import { useContext } from "react"; // HOOK
 
 const CreateATournament = () => {
+  const { updateOnCreateATournament, updateOnSelectGame } =
+    useContext(LoginContext); // AYUDANTES
 
-  // const carSld = document.getElementById("carrusel-slides");
-  // const carSlds = document.querySelector("#carrusel-slides .slide");
-  // const carRight = document.querySelector(".btn-next");
-  // const carLeft = document.querySelector(".btn-prev");
-  // let direction;
-  
-  // carRight.onclick = function () {
-  //   carSld.scrollLeft += 220;  
-  // };
-  
-  // carLeft.onclick = function () {
-  //   carSld.scrollLeft -= 220;
-  // };
-  
-
-
-
+  const handleOnNewTourney = () => {
+    updateOnCreateATournament(false);
+    updateOnSelectGame(true);
+  }; // EVENTO
 
   return (
     <div className="tournament-background">
       <div className="background-name-modal">
         <div className="name-modal">
-          <i class="fi fi-rr-gamepad"></i>
+          <img
+            src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670527282/assets/Icono_Control_de_Juego_kg0bej.svg"
+            className="icono-control-de-juego"
+          ></img>
           <p className="title-modal">Crea un torneo</p>
         </div>
-        <button className="btn-creatorneo">Crea un nuevo torneo</button>
+        <button onClick={handleOnNewTourney} className="btn-creatorneo">
+          Crea un nuevo torneo
+        </button>
         <p className="duplica"> O duplica alguno de tus torneos anteriores</p>
         <p className="listado-10">
           Solo los últimos 10 torneos aparecen listados
         </p>
-        <div id="carrusel"className="frame-carousel">
-        <div id="carrusel" class="slider">
-          <div id="carrusel-slides" class="slides">
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-            <div class="slide"><img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg" className="img-slide"></img></div>
-          </div>
-          {/* <button class="btn-prev" />
+        <div id="carrusel" className="frame-carousel">
+          <div id="carrusel" class="slider">
+            <div id="carrusel-slides" class="slides">
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+                <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+              <div className="slide">
+              <img
+                  src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851651/assets/FreeFire_k6apkt.jpg"
+                  className="img-slide"
+                  onClick={handleOnNewTourney}
+                ></img>
+                <div className="data-cita">
+                  <p>08 DIC 2022</p>
+                  <p>09:00 am - 3GTM</p>
+                </div>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <div className="data-torneo">
+                <div className="data-row-1">
+                  <p className="data-estadio">Estadium eSports</p>
+                  <p className="data-estadio">Abierto</p>
+                  </div>
+                  <p className="data-arena">GL ARENA PUGB SOLO IV</p>
+                </div>
+              </div>
+            </div>
+            {/* <button class="btn-prev" />
           <button class="btn-next" /> */}
-        </div>
+          </div>
         </div>
       </div>
     </div>
