@@ -25,7 +25,6 @@
             color: grey;
             width: clamp(0.625rem, 1.25vw, 2.5rem);
         }
-
         & input {
             width: 100%;
         }
@@ -35,10 +34,28 @@
             @include flex(row, center, center);
             gap: 2rem;
         }
+        &-li {
+            &-user {
+                @include flex(row, center, center);
+                gap: 1rem;
+            }
+        }
+        &-picture {
+            width: auto;
+
+            & img {
+                width: clamp(1.5rem, 3.5vw, 6.5rem);
+                height: clamp(1.5rem, 3.5vw, 6.5rem);
+                object-fit: cover;
+                object-position: center;
+                border-radius: 100%;
+                background: linear-gradient(91.15deg, #ff45d1 50%, #6516b8 50%);
+                padding: 0.1rem;
+            }
+        }
         &-a {
             font-size: clamp(0.5rem, 1vw, 2rem);
             font-weight: 600;
-
             &-border {
                 height: 0.25rem;
                 border-radius: 1rem;
@@ -47,7 +64,6 @@
                 opacity: 0;
                 transition: 500ms;
             }
-
             &-active {
                 .nav-a-border {
                     opacity: 1;
@@ -58,8 +74,8 @@
     &-btn {
         font-size: clamp(0.4rem, 0.875vw, 1.6rem);
         font-weight: 600;
-        padding: 0.75em 1.75em;
-        background-color: #fbbc05;
         border-radius: 3rem;
+        background-color: #fbbc05;
+        padding: 0.75em 1.75em;
     }
 }

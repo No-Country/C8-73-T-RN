@@ -1,11 +1,16 @@
 import { LoginContext } from '../../context/login/LoginContext'; // CONTEXTO
+import { UserContext } from '../../context/user/UserContext'; // CONTEXTO
 import { Link, NavLink } from 'react-router-dom'; // COMPONENTE ROUTER DOM
 import { useContext } from 'react'; // HOOK
 
 const Header = () => {
     const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
 
-    const handleOnLoginWithOption = () => updateOnLoginWithOption(true); // EVENTO
+    const { user } = useContext(UserContext); // AYUDANTES
+
+    const handleOnLoginWithOption = () => {
+        updateOnLoginWithOption(true);
+    }; // EVENTO
 
     return (
         <header className="header">
@@ -23,6 +28,21 @@ const Header = () => {
             {/* BARRA DE NAVEGACION */}
             <nav className="nav">
                 <ul className="nav-ul">
+                    {/* LINK DE USUARIO */}
+                    {user && (
+                        <li className="nav-li nav-li-user">
+                            <picture className="nav-picture">
+                                <img
+                                    src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670369638/assets/photo-mariana_bz9vnm.jpg"
+                                    alt="avatar de usuario"
+                                />
+                            </picture>
+                            <NavLink className={({ isActive }) => (isActive ? 'nav-a nav-a-active' : 'nav-a')} to="/cuenta">
+                                {user.displayName}
+                                <div className="nav-a-border"></div>
+                            </NavLink>
+                        </li>
+                    )}
                     <li className="nav-li">
                         <NavLink className={({ isActive }) => (isActive ? 'nav-a nav-a-active' : 'nav-a')} to="/">
                             Inicio
@@ -44,9 +64,11 @@ const Header = () => {
                 </ul>
             </nav>
             {/* BOTON INICIAR SESION */}
-            <button className="header-btn" onClick={handleOnLoginWithOption}>
-                Iniciar Sesión
-            </button>
+            {user === null && (
+                <button className="header-btn" onClick={handleOnLoginWithOption}>
+                    Iniciar Sesión
+                </button>
+            )}
         </header>
     );
 };
