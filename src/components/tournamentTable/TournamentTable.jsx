@@ -1,14 +1,21 @@
 import Clasificacion from "./Clasificacion"
 import Tournament from "./Tournament"
 import { useState } from "react";
-
+import { LoginContext } from "../../context/login/LoginContext"; //CONTEXTO
+import { useContext } from "react"; // HOOK
 
 const TournamentTable = () => {
+
+    const { updateOnCreateTourney } = useContext(LoginContext); // AYUDANTES
 
     const [ onSelected , setOnSelected ] = useState({
         tournament : true,
         clasificacion : false
     })
+
+    const handleOnCreateTourney = () => {
+        updateOnCreateTourney(true);
+      }; // EVENTO
 
     return(
         <div className="tournament-table">
@@ -38,8 +45,8 @@ const TournamentTable = () => {
                             <p>Clasificacion</p>
                         </li>
                         {/* Tu parte Cari */}
-                        <li>
-                            Torneos
+                        <li onClick={updateOnCreateTourney}>
+                            Crear torneo
                         </li>
                     </ul>
                 </div>

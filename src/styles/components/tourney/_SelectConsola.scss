@@ -3,6 +3,16 @@
 $font: "Poppins", sans-serif;
 $fontColor: #ffffff;
 
+
+.consola-background{
+  @include flex(row, center, center);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.699);
+  z-index: 1;
+}
+
 .search-consola {
 //  @include flex(row, center, center);
   position: fixed;
@@ -10,8 +20,6 @@ $fontColor: #ffffff;
   height: 604px;
   background-color: #0c074a;
   border-radius: 16px;
-  margin-left: 20%;
-  margin-top: 12%;
   z-index: 3;
 }
 
@@ -55,6 +63,14 @@ $fontColor: #ffffff;
   align-items: center;
 
   color: #ffffff;
+}
+
+.input-search-consola{
+  padding-left: 50px;
+  background-color: #ffffff;
+  width: 302.25px;
+  height: 40px;
+  border-radius: 27px;
 }
 
 .searchconsola-container{
