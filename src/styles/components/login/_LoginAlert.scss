@@ -1,0 +1,26 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// ESTILOS
+.alert-login {
+    background-color: var(--background-two);
+    border-radius: 1rem;
+    max-width: clamp(280px, 100%, 450px);
+
+    &-icons {
+        @include flex(row, space-between, center);
+        border-radius: 1rem 1rem 0 0;
+        background-color: #c51918;
+        padding: 1rem 1.75rem;
+
+        & svg {
+            width: 1.75rem;
+            fill: none;
+        }
+    }
+    &-title {
+        font-size: clamp(0.5rem, 1vw, 2rem);
+        font-weight: 400;
+        padding: 1.75em 5.5em;
+    }
+}
