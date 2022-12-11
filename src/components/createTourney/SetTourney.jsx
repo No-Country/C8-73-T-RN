@@ -4,17 +4,18 @@ import { useContext } from "react"; // HOOK
 
 const SetTourney = () => {
 
-//   const { updateOnCreateATournament, updateOnSelectGame } = useContext(LoginContext); // AYUDANTES
+  const { updateOnSetTourney } = useContext(LoginContext); // AYUDANTES
 
   
 
-//   const handleOnNewTourney = () => {
-//     updateOnCreateATournament(false)
-//     updateOnSelectGame(true)
-//   }; // EVENTO
+  const handleOnFinish = () => {
+    updateOnSetTourney(false)
+    
+  }; // EVENTO
   
 
   return (
+    <div className="set-background-total">
     <div className="set-background">
       <div className="background-set">
       
@@ -25,7 +26,8 @@ const SetTourney = () => {
       
       <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670473142/assets/Trofeo_vndieb.svg" className="trofeo"></img>
         <p className="torneo-creado"> Tu torneo ha sido creado</p>
-        <button  className="btn-set">Finalizar</button>
+        <button  onClick={handleOnFinish} className="btn-set">Finalizar</button>
+    </div>
     </div>
   );
 };

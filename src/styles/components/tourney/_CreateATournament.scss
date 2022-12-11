@@ -4,15 +4,20 @@ $font: "Poppins", sans-serif;
 $fontColor: #ffffff;
 
 .tournament-background {
-  // @include flex(row, center, center);
+  @include flex(row, center, center);
   position: fixed;
-  width: 69.563rem;
-  height: 37.75rem;
-  background-color: #0c074a;
-  border-radius: 16px;
-  margin-left: 20%;
-  margin-top: 12%;
-  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.699);
+  z-index: 1;
+}
+
+.tournament-background-modal {
+  width: 1113px;
+  height: 604px;
+  margin: auto;
+  background-color: var(--background-two);
+  border-radius: 1rem;
 }
 
 .background-name-modal {
@@ -22,58 +27,44 @@ $fontColor: #ffffff;
   height: 5rem;
   margin-top: 3.438rem;
   display: flex;
-  
-  
 }
 
 .icono-control-de-juego {
   width: 80px;
   height: 63.34px;
-  
 }
 
 .name-modal {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .title-modal {
-  position: absolute;
-  width: 19.563rem;
-  height: 3.688rem;
   left: 6.375rem;
-  top: 4.063rem;
-
-  /* Heading/medium */
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 130%;
-  /* or 42px */
-
   display: flex;
   align-items: center;
-
   color: #ffffff;
 }
 
 .btn-creatorneo {
+  width: 405px;
+  height: 55px;
   position: absolute;
-  left: 31.99%;
-  right: 31.63%;
-  top: 29.97%;
-  bottom: 60.93%;
+  margin: 8rem 18.5%;
+  // left: 31.99%;
+  // right: 31.63%;
+  // top: 37%;
+  // bottom: 60.93%;
+
   background: #fbbc05;
   border-radius: 29.0411px;
-  font-family: $font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
   cursor: pointer;
 }
 
@@ -81,8 +72,8 @@ $fontColor: #ffffff;
   position: absolute;
   width: 350px;
   height: 24px;
-  left: 381px;
-  top: 257px;
+  margin-left: 381px;
+  margin-top: 13rem;
 
   /* Text/regular/Bold */
 
@@ -100,8 +91,8 @@ $fontColor: #ffffff;
   position: absolute;
   width: 350px;
   height: 18px;
-  left: 385px;
-  top: 286px;
+  margin-left: 385px;
+  margin-top: 15rem;
 
   /* Text/tiny/Medium */
 
@@ -121,16 +112,15 @@ $fontColor: #ffffff;
   position: absolute;
   width: 1089px;
   height: 221px;
-  left: 24px;
-  top: 344px;
- }
+  margin-left: 24px;
+  margin-top: 295px;
+}
 
 //_______________________________________________________________
 .slider {
   width: 100%; /* card * 4 + margin * 4 */
   text-align: center;
   position: relative;
-
 }
 
 .slides {
@@ -141,12 +131,10 @@ $fontColor: #ffffff;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   transition: all 0.5s ease;
-
 }
 // .slides::-webkit-scrollbar {
 //   display: none;
 // }
-
 
 .slides .slide {
   scroll-snap-align: start;
@@ -243,9 +231,9 @@ $fontColor: #ffffff;
   left: 0;
   top: 0;
   padding: 3%;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 9.49538px;
-line-height: 150%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.49538px;
+  line-height: 150%;
 }

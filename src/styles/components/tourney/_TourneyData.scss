@@ -1,14 +1,20 @@
 @import "../.././global/mixins";
 
+.form-data-background{
+  @include flex(row, center, center);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.699);
+  z-index: 1;
+}
+
 .tournament-form-data {
   position: fixed;
   width: 69.563rem;
   height: 37.75rem;
   background-color: #0c074a;
   border-radius: 16px;
-  margin-left: 20%;
-  margin-top: 12%;
-  margin-bottom: 12%;
   z-index: 3;
 }
 
@@ -54,6 +60,9 @@
   width: 371.72px;
   height: 51.99px;
   margin: 20px;
+  background-color: #ffffff;
+  border-radius: 8.2px;
+  padding-left: 5px;
 }
 
 ::placeholder {
@@ -79,6 +88,7 @@
   background-color: #ffffff;
   color: #000;
   margin: 35px ;
+  cursor: pointer;
 }
 
 .btn-data-unirse {

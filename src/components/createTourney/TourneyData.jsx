@@ -52,7 +52,13 @@ const TourneyData = () => {
     updateOnSetTourney(true);
   }; // EVENTO
 
+
+  const handleReturnPageTorneo = () =>{
+    updateOnTourneyData(false);
+  }
+
   return (
+    <div className="form-data-background">
     <div className="tournament-form-data">
       <div className="background-name-modal-form">
         <div className="name-modal">
@@ -130,7 +136,9 @@ const TourneyData = () => {
             </div>
           </div>
           <div className="btn-form-data">
-            <button className="btn-data-cancelar">Cancelar</button>
+          
+            <button onClick={handleReturnPageTorneo} className="btn-data-cancelar">Cancelar</button>
+            
             <button
               disabled={thereAreErrors}
               type="submit"
@@ -143,6 +151,7 @@ const TourneyData = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };

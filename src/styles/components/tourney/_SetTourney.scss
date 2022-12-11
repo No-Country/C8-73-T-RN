@@ -4,6 +4,14 @@ $font: "Poppins", sans-serif;
 $fontColor: #ffffff;
 
 
+.set-background-total{
+  @include flex(row, center, center);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.699);
+  z-index: 1;
+}
 
 .set-background {
   position: fixed;
@@ -11,9 +19,6 @@ $fontColor: #ffffff;
   height: 510px;
   background-color: #0c074a;
   border-radius: 16px;
-  margin-left: 27%;
-  margin-top: 12%;
-  // z-index: 3;
   display:flex;
   flex-wrap:wrap;
   justify-content: center;
@@ -90,4 +95,5 @@ top: 79.71%;
 bottom: 10.09%;
 background: #FBBC05;
 border-radius: 29.0411px;
+cursor: pointer;
 }

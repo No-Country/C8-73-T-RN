@@ -1,6 +1,6 @@
 import { LoginContext } from "../../context/login/LoginContext"; //CONTEXTO
 import { useContext } from "react"; // HOOK
-import {BiSearchAlt2} from "react-icons/bi";
+
 
 const SelectConsola = () => {
   const { updateOnSelectConsola, updateOnTourneyData } = useContext(LoginContext); // AYUDANTES
@@ -15,6 +15,7 @@ const SelectConsola = () => {
 
 
     return (
+      <div className="consola-background">
       <div className="search-consola">
         <div className="header-consola">
           <div className="background-name-modal-consola">
@@ -26,10 +27,10 @@ const SelectConsola = () => {
             
           </div>
           <form class="searchconsola-container">
-          <BiSearchAlt2 className="input-icon"/>
-              <input className="input-search" type="text" placeholder="Busca tu juego">
+          
+              <input className="input-search-consola" type="text" placeholder="Busca tu juego">
                 
-                  {/* <i class="fi fi-rr-search"></i> */}
+                  
               </input>
             </form>
           </div>
@@ -59,6 +60,7 @@ const SelectConsola = () => {
           </div>
   
           
+        </div>
         </div>
   
     );

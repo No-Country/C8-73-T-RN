@@ -12,6 +12,7 @@ const CreateATournament = () => {
 
   return (
     <div className="tournament-background">
+    <div className="tournament-background-modal">
       <div className="background-name-modal">
         <div className="name-modal">
           <img
@@ -225,6 +226,7 @@ const CreateATournament = () => {
           <button class="btn-next" /> */}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
