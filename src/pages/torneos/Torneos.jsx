@@ -1,7 +1,9 @@
+import TournamentTable from "../../components/tournamentTable/TournamentTable";
+
 const Torneos = () => {
     return (
         <main>
-            <h2>contenido de torneos</h2>
+            <TournamentTable />
         </main>
     );
 };

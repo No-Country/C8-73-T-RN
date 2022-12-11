@@ -1,5 +1,6 @@
 import { LoginContext } from '../../context/login/LoginContext'; // CONTEXTO
 import { useContext } from 'react'; // HOOK
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
@@ -24,7 +25,7 @@ const Navbar = () => {
                     <a href="#">Juegos</a>
                 </li>
                 <li>
-                    <a href="#">Torneo</a>
+                    <Link></Link>Torneo
                 </li>
                 {/* BOTON INICIAR SESION */}
                 <div className="buttons">
