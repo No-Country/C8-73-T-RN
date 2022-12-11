@@ -4,12 +4,18 @@
 
 //* COMPONENTES
 @use './components/button/Button';
-@use './components/navbar/Navbar';
+@use './components/header/Header';
 @use './components/login/LoginWithOption';
 @use './components/form/Form';
 @use './components/footer/Footer';
 @use './components/hero/Hero';
+@use './components/categories/Categories';
 @use './components/newsletter/Newsletter';
+@use './components/account/ProfileSummary';
+@use './components/account/NextTournaments';
+@use './components/account/FavoriteGames';
+@use './components/account/ProgrammedTournaments';
+@use './components/tournamentTable/TournamentTable';
 @use './components/tourney/CreateTourney';
 @use './components/tourney/CreateATournament';
 @use './components/tourney/SelectGame';
@@ -22,3 +28,8 @@
 @use './pages/error/Error';
 //? LOGIN
 @use './pages/login/LoginLayout';
+//? CUENTA
+@use './pages/cuenta/Account';
+@use './pages/cuenta/LayoutAccount';
+//? TORNEOS
+@use './pages/torneos/Tournaments';

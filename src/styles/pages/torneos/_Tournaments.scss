@@ -1,0 +1,8 @@
+.tournaments {
+    &-tourney {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: var(--padding-main);
+    }
+}

@@ -1,0 +1,124 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// ESTILOS
+.next-tournaments {
+    background-color: var(--background-two);
+    border-radius: 1rem;
+
+    &-header {
+        @include flex(row, space-between, center);
+        padding: 1rem 1rem 0 0;
+
+        &-title {
+            @include flex(row, center, center);
+            gap: 1rem;
+            font-size: clamp(0.75rem, 1.5vw, 3rem);
+            font-weight: 700;
+            background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
+            border-radius: 0 2rem 2rem 0;
+            padding: 0 3rem;
+
+            & svg {
+                width: clamp(2.5rem, 5vw, 10rem);
+            }
+        }
+        &-a {
+            @include flex(row, center, center);
+            gap: 1rem;
+            font-size: clamp(0.5rem, 1.25vw, 2.5rem);
+            font-weight: 500;
+
+            & svg {
+                width: clamp(1rem, 2vw, 3rem);
+            }
+        }
+    }
+    &-art {
+        display: flex;
+        flex-direction: column;
+        background-color: #3a366b;
+        border-radius: 1rem;
+        margin: 1rem;
+
+        &-header {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            padding: 1rem 2rem;
+
+            .next-tournaments-picture {
+                width: auto;
+
+                & img {
+                    width: 67px;
+                    height: 67px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 100%;
+                }
+            }
+            .next-tournaments-info {
+                @include flex(column, center, center);
+                flex: 1;
+
+                &-versus {
+                    font-size: clamp(0.75rem, 1.5vw, 3rem);
+                    font-weight: 700;
+                }
+                &-detail {
+                    font-size: clamp(0.5rem, 1vw, 2rem);
+                    font-weight: 600;
+                }
+                &-num {
+                    color: #d94b94;
+                }
+            }
+            .next-tournaments-profile {
+                @include flex(column, center, flex-start);
+
+                &-name {
+                    font-size: clamp(0.5rem, 1.25vw, 3rem);
+                    font-weight: 700;
+                }
+                &-user {
+                    font-size: clamp(0.5rem, 1vw, 2rem);
+                    font-weight: 500;
+                }
+            }
+        }
+        &-border {
+            height: 0.0625rem;
+            background-color: #d9d9d9;
+            margin: 0 2rem;
+        }
+        &-footer {
+            @include flex(row, flex-start, center);
+            gap: 2rem;
+            padding: 1rem 2rem;
+
+            .next-tournaments-state {
+                @include flex(row, center, center);
+                gap: 0.5rem;
+                font-size: clamp(0.5rem, 1vw, 2rem);
+                font-weight: 500;
+            }
+            .next-tournaments-date {
+                @extend .next-tournaments-state;
+
+                & svg {
+                    width: clamp(1rem, 2vw, 3rem);
+                    fill: none;
+                }
+            }
+            .next-tournaments-location {
+                @extend .next-tournaments-state;
+
+                & svg {
+                    width: clamp(1rem, 2vw, 3rem);
+                    fill: none;
+                }
+            }
+        }
+    }
+}

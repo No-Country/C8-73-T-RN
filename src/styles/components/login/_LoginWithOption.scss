@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.699);
+    z-index: 1;
 }
 .login-with-option {
     max-width: 40vw;
@@ -49,10 +50,6 @@
             background-color: #ffffff;
         }
         &-correo {
-            background-color: #993ff6;
-        }
-        &-guest {
-            margin-top: 2rem;
             background-color: #993ff6;
         }
     }

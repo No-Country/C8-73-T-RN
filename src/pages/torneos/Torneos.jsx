@@ -1,7 +1,17 @@
+import TournamentTable from '../../components/tournamentTable/TournamentTable'; // COMPONENTE
+import { ProgrammedTournaments } from '../../components/account/ProgrammedTournaments'; // COMPONENTE
+
 const Torneos = () => {
     return (
         <main>
-            <h2>contenido de torneos</h2>
+            {/* COMPONENTE */}
+            <TournamentTable />
+            <section className="tournaments-tourney">
+                {/* COMPONENTE */}
+                <ProgrammedTournaments title="Próximos torneos" search={true} filter={true} />
+                {/* COMPONENTE */}
+                <ProgrammedTournaments title="Torneos finalizados" link={true} />
+            </section>
         </main>
     );
 };

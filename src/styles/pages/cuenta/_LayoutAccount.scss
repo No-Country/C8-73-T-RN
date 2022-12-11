@@ -1,0 +1,32 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// ESTILOS
+.layout-account {
+    @include flex(column, center, center);
+    gap: 1rem;
+
+    &-ul {
+        width: 100%;
+        @include flex(row, flex-start, center);
+        gap: 5rem;
+        padding: 3rem;
+    }
+    &-a {
+        font-size: 1.25vw;
+
+        &-border {
+            height: 0.25rem;
+            border-radius: 1rem;
+            background-color: #fbbc05;
+            margin-top: 0.25rem;
+            opacity: 0;
+            transition: 500ms;
+        }
+        &-active {
+            .layout-account-a-border {
+                opacity: 1;
+            }
+        }
+    }
+}

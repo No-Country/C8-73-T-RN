@@ -1,0 +1,44 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// ESTILOS
+.favorite-games {
+    background-color: var(--background-two);
+    border-radius: 1rem;
+
+    &-header {
+        padding: 1rem 3.75rem 0 0;
+
+        &-title {
+            @include flex(row, center, center);
+            gap: 1rem;
+            font-size: clamp(0.75rem, 1.5vw, 3rem);
+            font-weight: 700;
+            background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
+            border-radius: 0 2rem 2rem 0;
+            padding: 0 2rem;
+
+            & svg {
+                width: clamp(2.5rem, 5vw, 10rem);
+            }
+        }
+    }
+    &-content {
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem;
+
+        &-figure {
+            width: auto;
+
+            & img {
+                width: clamp(4rem, 7.5vw, 12rem);
+                height: clamp(4rem, 7.5vw, 12rem);
+                object-fit: cover;
+                object-position: center;
+                border-radius: 100%;
+            }
+        }
+    }
+}

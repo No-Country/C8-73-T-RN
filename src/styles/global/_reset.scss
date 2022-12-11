@@ -13,7 +13,7 @@
     // TIPOGRAFIA
     --family-one: 'Poppins', sans-serif;
     // PADDING
-    --padding-main: 0 clamp(2rem, 5.75vw, 10rem);
+    --padding-main: 0 clamp(2rem, 5.75vw, 10rem) clamp(1.25rem, 2.5vw, 5rem);
 }
 
 // GENERAL

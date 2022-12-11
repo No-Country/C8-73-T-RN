@@ -1,0 +1,121 @@
+// MIXINS
+@import '../.././global/mixins';
+
+// ESTILOS
+.programmed-tournaments {
+    background-color: var(--background-two);
+    border-radius: 1rem;
+
+    &-header {
+        @include flex(row, space-between, center);
+        padding: 3rem 2rem 0 0;
+
+        &-title {
+            @include flex(row, center, center);
+            gap: 1rem;
+            font-size: clamp(1rem, 2vw, 4rem);
+            font-weight: 700;
+            background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
+            border-radius: 0 2.5rem 2.5rem 0;
+            padding: 1rem 4rem 1rem 2rem;
+
+            & svg {
+                width: clamp(1rem, 2vw, 3rem);
+            }
+        }
+        &-search {
+            @include flex(row, center, center);
+            gap: 0.5rem;
+            border-radius: 1.5rem;
+            background-color: #ffffff;
+            padding: 0.5rem 1.25rem;
+
+            & svg {
+                color: grey;
+                width: clamp(0.75rem, 1.5vw, 3rem);
+            }
+            & input {
+                &::placeholder {
+                    color: #d2d2d2;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                }
+            }
+        }
+        &-filter {
+            @include flex(row, center, center);
+            gap: 1.5rem;
+            border-radius: 0.5rem;
+            background-color: #ffffff;
+            padding: 0.75rem 1.25rem;
+
+            &-name {
+                color: #0c074a;
+                font-size: clamp(0.4rem, 0.875vw, 1.2rem);
+                font-weight: 500;
+            }
+            & svg {
+                color: #0c074a;
+                width: clamp(0.75rem, 1.5vw, 3rem);
+            }
+        }
+    }
+    &-art {
+        @include flex(row, center, center);
+        gap: 1rem;
+        margin: 2rem;
+
+        &-picture {
+            width: auto;
+
+            & img {
+                width: 12.5rem;
+                height: 7.5rem;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 1rem;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+            }
+        }
+        &-header {
+            flex: 1;
+            @include flex(column, center, flex-start);
+            gap: 1rem;
+            padding: 0;
+            .programmed-tournaments-details {
+                @include flex(row, center, center);
+                gap: 2rem;
+
+                &-detail {
+                    @include flex(row, center, center);
+                    gap: 0.5rem;
+                    font-size: clamp(0.4rem, 0.875vw, 1.6rem);
+                    font-weight: 400;
+
+                    & svg {
+                        width: clamp(1rem, 2vw, 3rem);
+                        fill: none;
+                    }
+                }
+            }
+            &-name {
+                font-size: clamp(0.5rem, 1.25vw, 2.5rem);
+                font-weight: 700;
+            }
+            .programmed-tournaments-calendary {
+                @extend .programmed-tournaments-details;
+
+                &-date {
+                    @extend .programmed-tournaments-details-detail;
+                }
+            }
+        }
+        &-btn {
+            font-size: clamp(0.5rem, 1vw, 2rem);
+            font-weight: 700;
+            border-radius: 3rem;
+            background-color: #fbbc05;
+            padding: 1rem 3rem;
+        }
+    }
+}

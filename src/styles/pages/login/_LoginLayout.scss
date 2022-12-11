@@ -4,7 +4,9 @@
 // ESTILOS
 .layout-login-bg {
     @include flex(row, center, center);
-    background-color: lightblue;
+    background-image: url('https://res.cloudinary.com/dvvfhyi8n/image/upload/v1669851654/assets/Gaming_Hero_Banner_3_k6ruw5.jpg');
+    background-size: cover;
+    background-position: top;
     padding: clamp(1rem, 2.5vw, 5rem) 0;
 }
 .layout-login {
