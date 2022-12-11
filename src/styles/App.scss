@@ -16,6 +16,8 @@
 @use './components/account/FavoriteGames';
 @use './components/account/ProgrammedTournaments';
 @use './components/tournamentTable/TournamentTable';
+@use './components/overlay/Overlay';
+@use './components/login/LoginAlert';
 
 //* PAGINAS
 //? ERROR
