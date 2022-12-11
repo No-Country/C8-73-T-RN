@@ -1,12 +1,17 @@
 import { LoginContext } from '../../context/login/LoginContext'; // CONTEXTO
 import { UserContext } from '../../context/user/UserContext'; // CONTEXTO
 import { Link, NavLink } from 'react-router-dom'; // COMPONENTE ROUTER DOM
+import { Overlay } from '../overlay/Overlay'; // COMPONENTE
+import { LoginAlert } from '../login/LoginAlert'; // COMPONENTE
 import { useContext, useState } from 'react'; // HOOKS
+import { useOverlay } from '../../hooks/overlay/useOverlay'; // HOOK PERSONALIZADO
 
 const Header = () => {
     const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
 
-    const { user, signOutUser } = useContext(UserContext); // AYUDANTES
+    const handleOnLoginWithOption = () => {
+        updateOnLoginWithOption(true);
+    }; // EVENTO
 
     const [onPhotoUser, updateOnPhotoUser] = useState(null); // ESTADO
 
@@ -14,17 +19,24 @@ const Header = () => {
         updateOnPhotoUser('nav-user-ul-active');
     }; // EVENTO
 
-    const handleOnLoginWithOption = () => {
-        updateOnLoginWithOption(true);
+    const { user, signOutUser } = useContext(UserContext); // AYUDANTES
+
+    const handleSignOutUser = () => {
+        updateOnPhotoUser(null);
+        signOutUser();
     }; // EVENTO
 
     const handleOnUserOverlay = (ev) => {
         if (ev.target === ev.currentTarget) return updateOnPhotoUser(null);
     }; // EVENTO
 
-    const handleSignOutUser = () => {
-        updateOnPhotoUser(null);
-        signOutUser();
+    const { showOverlay, openOverlay, closeOverlay } = useOverlay(); // AYUDANTES
+
+    const handleOnAnchorTourney = (ev) => {
+        if (!user) {
+            ev.preventDefault();
+            openOverlay();
+        }
     }; // EVENTO
 
     return (
@@ -80,10 +92,17 @@ const Header = () => {
                         </NavLink>
                     </li>
                     <li className="nav-li">
-                        <NavLink className={({ isActive }) => (isActive ? 'nav-a nav-a-active' : 'nav-a')} to="/torneos">
+                        <NavLink
+                            onClick={handleOnAnchorTourney}
+                            className={({ isActive }) => (isActive ? 'nav-a nav-a-active' : 'nav-a')}
+                            to="/torneos">
                             Torneos
                             <div className="nav-a-border"></div>
                         </NavLink>
+                        {/* COMPONENTE */}
+                        <Overlay show={showOverlay}>
+                            <LoginAlert onClick={closeOverlay} />
+                        </Overlay>
                     </li>
                 </ul>
             </nav>
