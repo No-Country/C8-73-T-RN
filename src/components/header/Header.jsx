@@ -1,15 +1,25 @@
 import { LoginContext } from '../../context/login/LoginContext'; // CONTEXTO
 import { UserContext } from '../../context/user/UserContext'; // CONTEXTO
 import { Link, NavLink } from 'react-router-dom'; // COMPONENTE ROUTER DOM
-import { useContext } from 'react'; // HOOK
+import { useContext, useState } from 'react'; // HOOKS
 
 const Header = () => {
     const { updateOnLoginWithOption } = useContext(LoginContext); // AYUDANTES
 
     const { user } = useContext(UserContext); // AYUDANTES
 
+    const [onPhotoUser, updateOnPhotoUser] = useState(null); // ESTADO
+
+    const handleOnPhotoUser = () => {
+        updateOnPhotoUser('nav-user-ul-active');
+    }; // EVENTO
+
     const handleOnLoginWithOption = () => {
         updateOnLoginWithOption(true);
+    }; // EVENTO
+
+    const handleOnUserOverlay = (ev) => {
+        if (ev.target === ev.currentTarget) return updateOnPhotoUser(null);
     }; // EVENTO
 
     return (
@@ -30,8 +40,8 @@ const Header = () => {
                 <ul className="nav-ul">
                     {/* LINK DE USUARIO */}
                     {user && (
-                        <li className="nav-li nav-li-user">
-                            <picture className="nav-picture">
+                        <li className="nav-li nav-user">
+                            <picture onClick={handleOnPhotoUser} className="nav-user-picture">
                                 <img
                                     src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670369638/assets/photo-mariana_bz9vnm.jpg"
                                     alt="avatar de usuario"
@@ -41,6 +51,13 @@ const Header = () => {
                                 {user.displayName}
                                 <div className="nav-a-border"></div>
                             </NavLink>
+                            <ul className={`nav-user-ul ${onPhotoUser ?? ''}`}>
+                                <li className="nav-user-li">Editar perfil</li>
+                                <li className="nav-user-li">Cerrar sesión</li>
+                            </ul>
+                            <div
+                                onClick={handleOnUserOverlay}
+                                className={`nav-user-overlay ${onPhotoUser ? 'nav-user-overlay-active' : ''}`}></div>
                         </li>
                     )}
                     <li className="nav-li">
