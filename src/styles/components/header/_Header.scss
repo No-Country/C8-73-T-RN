@@ -65,13 +65,12 @@
                 display: none;
                 z-index: 2;
 
-                &-li {
-                    font-size: clamp(0.5rem, 1vw, 2rem);
-                    font-weight: 500;
-                }
                 &-active {
                     display: flex;
                 }
+            }
+            &-li {
+                cursor: pointer;
             }
             &-overlay {
                 position: fixed;
