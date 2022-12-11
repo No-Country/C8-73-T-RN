@@ -5,7 +5,6 @@
 .layout-account {
     @include flex(column, center, center);
     gap: 1rem;
-    padding-bottom: 1.75rem;
 
     &-ul {
         width: 100%;
