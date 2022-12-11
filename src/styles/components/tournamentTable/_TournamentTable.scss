@@ -1,0 +1,152 @@
+.tournament-table{
+    position: relative;
+    width: 80%;
+    margin: 0 10%;
+    padding: 46px 32px 35px 32px;
+
+    .nav-table{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 40px ;
+        margin-bottom: 16px;
+        font-size: 20px;
+
+        
+        .nav-table-right{
+            ul{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            li{
+                cursor: pointer;
+            }
+
+            .nav-activated{
+                height: 0.25rem;
+                border-radius: 1rem;
+                background-color: #fbbc05;
+                opacity: 1;
+                transition: 500ms;
+            }
+
+        }
+    
+    }
+    .content-of-table{
+        background-color:#0C074A;
+        height: 418px;
+        padding: 46px 32px 0px 32px ;
+        border-radius: 16px;
+        .header-table{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .category-table-name{
+                padding-left: 35px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                gap: 30px;
+
+                svg{
+                    color: #0C074A;
+                    width: 60px;
+                    height: 60px;
+                }
+                p{
+                    font-size: 32px;
+                    font-weight: bolder;
+                }
+            }
+            .time-table{
+                display: flex;
+                align-items: center;
+                gap: 16px ;
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 62px;
+                    height: 47px;
+                    border-radius: 10px;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+        .data-table{
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            .data-of-right{
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+
+                gap: 24px;
+                .header-r{
+                    text-align: center;
+                    display: flex;
+                    gap:34px
+                }
+                .players-table{
+                    display: flex;
+                    gap: 52px;
+                    text-align: center;
+                    padding-left: 20px;
+                    img{
+                        width: clamp(1.5rem, 2vw, 6.5rem);
+                        height: clamp(1.5rem, 2vw, 6.5rem);
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 100%;
+                        background: linear-gradient(91.15deg, #ff45d1 50%, #6516b8 50%);
+                        padding: 0.1rem;
+                    }
+                    .player-data{
+                        display: flex;
+                        gap: 8px;
+                        justify-content: center;
+                    }
+                }
+                
+            }
+
+            .data-of-left{
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+
+                gap: 24px;
+                .header-l{
+                    text-align: center;
+                    justify-content: center;
+                    display: flex;
+                    gap:34px
+                }
+                .players-table{
+                    img{
+                        width: clamp(1.5rem, 2vw, 6.5rem);
+                        height: clamp(1.5rem, 2vw, 6.5rem);
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 100%;
+                        background: linear-gradient(91.15deg, #ff45d1 50%, #6516b8 50%);
+                        padding: 0.1rem;
+                    }
+                    display: flex;
+                    gap: 52px;
+                    text-align: center;
+                    justify-content: center;
+
+
+                }
+            }
+        }
+    }
+}
