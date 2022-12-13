@@ -78,22 +78,22 @@ $font: "Poppins", sans-serif;
 
 .title-grid {
   font-family: $font;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .text-grid {
   font-family: $font;
-  font-size: 10.83px;
+  font-size: 0.677rem;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1rem;
 }
 
 .img-crear-equipo {
  
-  width: 48.4px;
-  height: 48.11px;
+  width: 3.025rem;
+  height: 3.007rem;
   background-color: #fb2356;
   background-size: 300%;
   background-clip: content-box;
@@ -105,8 +105,8 @@ $font: "Poppins", sans-serif;
 }
 
 .img-crear-arena{
-  width: 48.4px;
-  height: 48.11px;
+  width: 3.025rem;
+  height: 3.007rem;
   background-color: #fb2356;
   background-size: 300%;
   background-clip: content-box;
@@ -122,9 +122,9 @@ i {
   // background-size: 50%;
   background-clip: content-box;
   border-radius: 50%;
-  width: 48.4px;
-  height: 48.11px;
-  font-size: 24px;
+  width: 3.025rem;
+  height: 3.007rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

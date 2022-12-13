@@ -13,8 +13,8 @@ $fontColor: #ffffff;
 }
 
 .tournament-background-modal {
-  width: 1113px;
-  height: 604px;
+  width: 69.563rem;
+  height: 37.75rem;
   margin: auto;
   background-color: var(--background-two);
   border-radius: 1rem;
@@ -22,7 +22,7 @@ $fontColor: #ffffff;
 
 .background-name-modal {
   background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
-  border-radius: 0px 40px 40px 0px;
+  border-radius: 0 2.5rem 2.5rem 0;
   width: 30.375rem;
   height: 5rem;
   margin-top: 3.438rem;
@@ -30,8 +30,8 @@ $fontColor: #ffffff;
 }
 
 .icono-control-de-juego {
-  width: 80px;
-  height: 63.34px;
+  width: 5rem;
+  height: 3.959rem;
 }
 
 .name-modal {
@@ -54,25 +54,25 @@ $fontColor: #ffffff;
 }
 
 .btn-creatorneo {
-  width: 405px;
-  height: 55px;
+  width: 25.313rem;
+  height: 3.438rem;
   position: absolute;
-  margin: 8rem 18.5%;
+  margin: 8rem 19.6%;
   // left: 31.99%;
   // right: 31.63%;
   // top: 37%;
   // bottom: 60.93%;
 
   background: #fbbc05;
-  border-radius: 29.0411px;
+  border-radius: 1.815rem;
   cursor: pointer;
 }
 
 .duplica {
   position: absolute;
-  width: 350px;
-  height: 24px;
-  margin-left: 381px;
+  width: 21.875rem;
+  height: 1.5rem;
+  margin-left: 23.813rem;
   margin-top: 13rem;
 
   /* Text/regular/Bold */
@@ -80,40 +80,32 @@ $fontColor: #ffffff;
   font-family: $font;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
-  /* identical to box height, or 24px */
-
   text-align: center;
 }
 
 .listado-10 {
   position: absolute;
-  width: 350px;
-  height: 18px;
-  margin-left: 385px;
+  width: 21.875rem;
+  height: 1.125rem;
+  margin-left: 24.063rem;
   margin-top: 15rem;
-
-  /* Text/tiny/Medium */
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
-  /* identical to box height, or 18px */
-
   text-align: center;
-
   color: #ffffff;
 }
 
 .frame-carousel {
   position: absolute;
-  width: 1089px;
-  height: 221px;
-  margin-left: 24px;
-  margin-top: 295px;
+  width: 68.063rem;
+  height: 13.813rem;
+  margin-left: 1.5rem;
+  margin-top: 18.438rem;
 }
 
 //_______________________________________________________________
@@ -136,25 +128,31 @@ $fontColor: #ffffff;
 //   display: none;
 // }
 
+.slides::-webkit-scrollbar-track{
+  background: var(--background-two);
+}
+
+.slides::-webkit-scrollbar{
+  height: 10px;
+}
+
 .slides .slide {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 390.89px;
-  height: 220.77px;
-  margin-right: 15px;
-  // margin-left: 15px;
-  border-radius: 16px;
-  // background: #eee;
+  width: 24.431rem;
+  height: 13.798rem;
+  margin-right: 0.938rem;
+  border-radius: 1rem;
   transition: transform 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 3.125rem;
   transform: translateX(0px);
 }
 
 .img-slide {
-  border-radius: 16px;
+  border-radius: 1rem;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -166,9 +164,9 @@ $fontColor: #ffffff;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 58px;
+  height: 3.625rem;
   padding: 3%;
-  border-radius: 0px 0px 15.0731px 15.0731px;
+  border-radius: 0 0 0.942rem 0.942rem;
 }
 
 .data-row-1 {
@@ -180,25 +178,22 @@ $fontColor: #ffffff;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 9.49538px;
+  font-size: 0.593rem;
   line-height: 150%;
   display: flex;
   align-items: center;
   color: #ffffff;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .data-estado {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 9.49538px;
+  font-size: 0.593rem;
   line-height: 150%;
-  /* or 14px */
-
   display: flex;
   align-items: center;
-
   color: #ffffff;
 }
 
@@ -206,10 +201,8 @@ $fontColor: #ffffff;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 12.6605px;
+  font-size: 0.791rem;
   line-height: 150%;
-  /* or 19px */
-
   display: flex;
   align-items: center;
 
@@ -221,9 +214,9 @@ $fontColor: #ffffff;
   right: 0;
   top: 0;
   width: 50%;
-  height: 58px;
+  height: 3.625rem;
   padding: 3%;
-  border-radius: 0px 0px 15.0731px 15.0731px;
+  border-radius: 0 0 0.942rem 0.942rem;
 }
 
 .data-cita {
@@ -234,6 +227,6 @@ $fontColor: #ffffff;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 9.49538px;
+  font-size: 0.593rem;
   line-height: 150%;
 }

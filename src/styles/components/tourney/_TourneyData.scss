@@ -14,13 +14,13 @@
   width: 69.563rem;
   height: 37.75rem;
   background-color: #0c074a;
-  border-radius: 16px;
+  border-radius: 1rem;
   z-index: 3;
 }
 
 .background-name-modal-form{
     background: linear-gradient(91.15deg, #fb2356 7.43%, #140c71 89%);
-  border-radius: 0px 40px 40px 0px;
+  border-radius: 0 2.5rem 2.5rem 0;
   width: 30.375rem;
   height: 5rem;
   margin-top: 3.438rem;
@@ -32,8 +32,8 @@
   @include flex(column, center, center);
   position: absolute;
   width: 100%;
-  height: 83.99px;
-  top: 350px;
+  height: 5.249rem;
+  top: 21.875rem;
 }
 
 .first-row {
@@ -50,26 +50,27 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #ffffff;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .input-data {
-  width: 371.72px;
-  height: 51.99px;
-  margin: 20px;
+  width: 23.233rem;
+  height: 3.249rem;
+  margin: 1.25rem;
   background-color: #ffffff;
-  border-radius: 8.2px;
-  padding-left: 5px;
+  border-radius: 0.513rem;
+  padding-left: 0.313rem;
+  color: black;
 }
 
 ::placeholder {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
   color: #afafaf;
 }
@@ -82,21 +83,21 @@
 }
 
 .btn-data-cancelar {
-  width: 175.92px;
-  height: 55px;
-  border-radius: 29px;
+  width: 10.995rem;
+  height: 3.438rem;
+  border-radius: 1.813rem;
   background-color: #ffffff;
   color: #000;
-  margin: 35px ;
+  margin: 2.188rem ;
   cursor: pointer;
 }
 
 .btn-data-unirse {
-  width: 175.92px;
-  height: 55px;
-  border-radius: 29px;
+  width: 10.995rem;
+  height: 3.438rem;
+  border-radius: 1.813rem;
   background-color: #fbbc05;
-  margin: 35px 0;
+  margin: 2.188rem 0;
 }
 
 

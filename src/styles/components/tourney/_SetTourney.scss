@@ -15,10 +15,10 @@ $fontColor: #ffffff;
 
 .set-background {
   position: fixed;
-  width: 881px;
-  height: 510px;
+  width: 55.063rem;
+  height: 31.875rem;
   background-color: #0c074a;
-  border-radius: 16px;
+  border-radius: 1rem;
   display:flex;
   flex-wrap:wrap;
   justify-content: center;
@@ -26,12 +26,12 @@ $fontColor: #ffffff;
 
 .background-set{
   position: absolute;
-  width: 480px;
-  height: 80px;
-  left: 200px;
-  top: 48px;
+  width: 30rem;
+  height: 5rem;
+  left: 12.5rem;
+  top: 3rem;
   background: linear-gradient(91.15deg, #FB2356 7.43%, #140C71 89%);
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: flex;
 justify-content: center;
 align-items: center;
@@ -41,39 +41,32 @@ text-align: center;
 
 .set-modal{
   
-width: 490px;
-height: 47px;
-
-// top: 65px;
-
+width: 30.625rem;
+height: 2.938rem;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
-font-size: 37.1387px;
+font-size: 2.321rem;
 line-height: 130%;
-/* or 48px */
 color: #FFFFFF;
 }
 
 .torneo-creado{
   position: absolute;
-width: 489.77px;
-height: 159px;
-left: 196px;
-top: 252px;
+width: 30.611rem;
+height: 9.938rem;
+left: 12.25rem;
+top: 15.75rem;
 
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
-font-size: 37.1387px;
+font-size: 2.321rem;
 line-height: 130%;
-/* or 48px */
-
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-
 color: #FFFFFF;
 }
 
@@ -81,8 +74,8 @@ color: #FFFFFF;
 
 .trofeo{
  position:absolute;
-  height: 137px;
-  width: 137px;
+  height: 8.563rem;
+  width: 8.563rem;
   margin-top:17%;
 
 }
@@ -94,6 +87,6 @@ right: 40.36%;
 top: 79.71%;
 bottom: 10.09%;
 background: #FBBC05;
-border-radius: 29.0411px;
+border-radius: 1.815rem;
 cursor: pointer;
 }

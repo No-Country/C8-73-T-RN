@@ -41,7 +41,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -60,7 +60,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -79,7 +79,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -98,7 +98,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -117,7 +117,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -136,7 +136,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -155,7 +155,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -174,7 +174,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -193,7 +193,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
@@ -212,7 +212,7 @@ const CreateATournament = () => {
                   <p>08 DIC 2022</p>
                   <p>09:00 am - 3GTM</p>
                 </div>
-                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540399/Free_fire-removebg-preview_bbfdcs.png" className="nombre-juego"></img>
+                <img src="https://res.cloudinary.com/dvvfhyi8n/image/upload/v1670540454/Free_fire-removebg-preview_ydged5.png" className="nombre-juego"></img>
                 <div className="data-torneo">
                 <div className="data-row-1">
                   <p className="data-estadio">Estadium eSports</p>
